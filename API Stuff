@@ -1,0 +1,57 @@
+The Movie DB----
+
+https://www.themoviedb.org/settings/api
+
+
+App Directory
+New! Once you have completed your application, add it to the app directory!
+
+API Key (v3 auth)
+248209b41efd69e17b54a070f19e9e35
+
+
+
+API Read Access Token (v4 auth)
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyNDgyMDliNDFlZmQ2OWUxN2I1NGEwNzBmMTllOWUzNSIsInN1YiI6IjVjYjRhNmE4MGUwYTI2MjZlOWNhYjJjYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.dDkebmqUzkyMS_cIznyEma65zQRKlTJTYbq_VZwyWYE
+
+
+
+
+Example API Request
+https://api.themoviedb.org/3/movie/550?api_key=248209b41efd69e17b54a070f19e9e35
+
+
+
+=========================================================================================================
+
+
+Utelly API
+
+https://rapidapi.com/utelly/api/utelly
+
+Lookup a tv show or movie by name and retrieve its availability across services || On Demand Services: [[uk]] Netflix, Amazon Prime, Amazon Instant, iTunes, Now TV, TalkTalk TV Store, Google Play, BBC iPplayer, All 4, My 5, Rakuten TV, ITV Hub. [[us]] Netflix, Amazon Prime, Amazon Instant, iTunes. || Live TV: [[uk]] All channels - BBC 1, BBC 2, ITV 1, Channel 4, Sky 1…
+
+
+Header Parameters
+RapidAPI Project
+
+X-RapidAPI-Host
+STRING
+utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com
+REQUIRED
+X-RapidAPI-Key
+STRING
+bd79c6c8f5msh7f9d3982389ebf6p1e4ccbjsn9f8e9b5e43bf
+REQUIRED
+
+Optional Parameters
+term
+STRING
+bojack
+OPTIONAL
+name of the show you want availability - supports partial strings
+country
+STRING
+uk
+OPTIONAL
+only selects services available in a specific country - only "uk" and "us" are supported
