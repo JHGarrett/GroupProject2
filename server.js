@@ -5,6 +5,8 @@ var exphbs = require("express-handlebars");
 var db = require("./models");
 
 var app = express();
+
+// we can change this port later if needed. Most express stuff uses this port however by default
 var PORT = process.env.PORT || 3000;
 
 // Middleware
