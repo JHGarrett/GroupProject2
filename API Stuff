@@ -57,7 +57,7 @@ OPTIONAL
 only selects services available in a specific country - only "uk" and "us" are supported
 
 =========================================================================================================
-
+<+++++++++++>
 
 Taste Dive
 https://tastedive.com/read/api
@@ -69,3 +69,7 @@ API access key
 
 Quota 
 300 per hour
+
+
+
+
