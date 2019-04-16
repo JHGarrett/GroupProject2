@@ -4,94 +4,92 @@ var $exampleDescription = $("#example-description");
 var $submitBtn = $("#submit");
 var $exampleList = $("#example-list");
 
-
 // login info page
 var $loginForm = $("#login-btn");
 var $signupForm = $("#signup-btn");
 var $loginSubmit = $("#login-submit");
 var $signupSubmit = $("#signup-submit");
 
-
 // A form that allows existing users to log in
 $loginForm.on("click", function() {
-    $("#signup-form").hide();
-    $("#login-form").show();
+  $("#signup-form").hide();
+  $("#login-form").show();
 });
-
 
 // A form that allow new users to sign up for the app
 $signupForm.on("click", function() {
-    $("#login-form").hide();
-    $("#signup-form").show();
+  $("#login-form").hide();
+  $("#signup-form").show();
 });
-
 
 // allow user to go to the users page
 
 $loginSubmit.on("click", function(event) {
-    event.preventDefault();
-    var login = {
-        username: $("#usernameLogin")
-            .val()
-            .trim(),
-        password: $("#userPasswordLogin")
-            .val()
-            .trim()
-    };
+  event.preventDefault();
+  var login = {
+    username: $("#usernameLogin")
+      .val()
+      .trim(),
+    password: $("#userPasswordLogin")
+      .val()
+      .trim()
+  };
 
-    $.ajax("/api/login/", {
-        method: "POST",
-        data: login
-    }).then(function(res) {
-        console.log(res);
-        console.log("Taking you to main page");
-        window.location.replace("/users");
-    }).catch(function(err){
-        alert("Sorry, username or password is incorrect.");
-        console.log(err);
+  $.ajax("/api/login/", {
+    method: "POST",
+    data: login
+  })
+    .then(function(res) {
+      console.log(res);
+      console.log("Taking you to main page");
+      window.location.replace("/users");
+    })
+    .catch(function(err) {
+      alert("Sorry, username or password is incorrect.");
+      console.log(err);
     });
 });
 
 // checks to make sure that new sign up is all valid
 // if it is then it will take them to the users page
 $signupSubmit.on("click", function(event) {
-    event.preventDefault();
+  event.preventDefault();
 
-// user must enter password twice to make sure there is no typo
+  // user must enter password twice to make sure there is no typo
 
-    var pass1 = $("#userPasswordSignup")
+  var pass1 = $("#userPasswordSignup")
+    .val()
+    .trim();
+  var pass2 = $("#confirmPassword")
+    .val()
+    .trim();
+
+  if (pass1 !== pass2) {
+    $("#passwordMatch").text("Your passwords don't match!");
+  } else {
+    console.log($("#passwordLogin").val());
+    var signup = {
+      username: $("#usernameSignup")
         .val()
-        .trim();
-    var pass2 = $("#confirmPassword")
+        .trim(),
+      password: $("#userPasswordSignup")
         .val()
-        .trim();
+        .trim()
+    };
 
-    if (pass1 !== pass2) {
-        $("#passwordMatch").text("Your passwords don't match!");
-    } else {
-        console.log($("#passwordLogin").val());
-        var signup = {
-            username: $("#usernameSignup")
-                .val()
-                .trim(),
-            password: $("#userPasswordSignup")
-                .val()
-                .trim()
-        };
+    $.ajax("/api/signup", {
+      method: "POST",
+      data: signup
+    }).then(function(res) {
+      console.log(res);
+      if (res.errors) {
+        return alert("Usersname is already in use.");
+      }
 
-        $.ajax("/api/signup", {
-            method: "POST",
-            data: signup
-        }).then(function(res) {
-            console.log(res);
-            if(res.errors){
-                return alert("Usersname is already in use.");
-            }
-         
-            console.log("Taking you to main page");
-            window.location.replace("/users");
-        });
-    }
+      console.log("Taking you to main page");
+      window.location.replace("/users");
+    });
+  }
 });
 
 // The API object contains methods for each kind of request we'll make
