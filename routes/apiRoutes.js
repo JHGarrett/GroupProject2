@@ -27,7 +27,6 @@
 //   });
 // };
 
-
 var db = require("../models");
 var passport = require("../config/passport");
 
