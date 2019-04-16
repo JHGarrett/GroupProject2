@@ -55,3 +55,17 @@ STRING
 uk
 OPTIONAL
 only selects services available in a specific country - only "uk" and "us" are supported
+
+=========================================================================================================
+
+
+Taste Dive
+https://tastedive.com/read/api
+
+API access key 
+334692-foreel-UBKAMU7G
+
+
+
+Quota 
+300 per hour
