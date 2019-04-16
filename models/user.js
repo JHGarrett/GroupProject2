@@ -1,9 +1,9 @@
 // bcrypt allows you to safly store user data https://www.npmjs.com/package/bcrypt
 
 const bcrypt = require("bcrypt");
-const saltRounds = 10;
-const myPlaintextPassword = "s0//P4$$w0rD";
-const someOtherPlaintextPassword = "not_bacon";
+// const saltRounds = 10;
+// const myPlaintextPassword = "s0//P4$$w0rD";
+// const someOtherPlaintextPassword = "not_bacon";
 
 module.exports = function(sequelize, DataTypes) {
   var User = sequelize.define("User", {
