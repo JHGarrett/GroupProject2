@@ -1,7 +1,7 @@
 $(document).ready(function() {
   // capture value from search
-  $("#searchForm").on("submit", function(e) {
-    let searchText = $("#searchText")
+  $("#search-form").on("submit", function(e) {
+    let searchText = $("#search-box")
       .val()
       .split(" ");
     let searchArray = searchText.join("+");
@@ -21,12 +21,11 @@ function getTasteDive(searchArray) {
 
   console.log(apiCall + searchArray);
 
-  axios
-    .get(apiCall + searchArray)
+  $.get(apiCall + searchArray)
     .then(function(response) {
-      // console.log(response);
-      let movies = response.data.Similar.Results;
-      // let posters = response.data.results.poster_path;
+      console.log(response);
+      let movies = response.Similar.Results;
+      // let posters = response.results.poster_path;
       // let output = '';
       for (i = 0; i < movies.length; i++) {
         console.log(movies[i].Name);
@@ -52,11 +51,10 @@ function getMoviePosters(movieTitles) {
 
   // console.log(omdbCall + movieTitles);
 
-  axios
-    .get(omdbCall + movieTitles)
+  $.get(omdbCall + movieTitles)
     .then(function(response) {
       console.log(response);
-      let movies = response.data.results;
+      let movies = response.results;
 
       for (i = 0; i < movies.length; i++) {
         var posterPath = movies[i].poster_path;
@@ -64,8 +62,8 @@ function getMoviePosters(movieTitles) {
 
         // console.log(movImg + posterPath);
 
-        $("#movPoster").append(
-          "<img src=" + movImg + posterPath + "id='movieThumbnail'>"
+        $(".content").append(
+          "<img src=" + movImg + posterPath + " id='movieThumbnail'>"
         );
       }
     })
