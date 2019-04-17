@@ -22,6 +22,7 @@ module.exports = function(app) {
     });
   });
 
+
   //once logged in redirected to this page
   app.get("/private", function(req, res) {
     res.send("You are logged in");
@@ -34,6 +35,10 @@ module.exports = function(app) {
   //login
   app.get("/login", function(req, res) {
     res.render("login ", {});
+// =======
+//   app.get("/mainpage", function(req, res) {
+//     res.render("mainpage");
+// >>>>>>> master
   });
 
   // Render 404 page for any unmatched routes
