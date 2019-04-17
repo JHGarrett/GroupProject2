@@ -89,8 +89,13 @@ body {
 }
 
 .profile-content {
+  float:left;
   padding: 15px;
   padding-left: 10%;
+}
+
+.profile-content header{
+  display:inline-block;
 }
 
 .user-info-box {
