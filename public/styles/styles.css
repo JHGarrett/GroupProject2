@@ -1,3 +1,147 @@
 .list-group-item {
   line-height: 2.5;
 }
+
+html{
+  height:100%;
+}
+
+body{
+  background:rgb(0, 0, 0);
+  color:lightslategrey;
+  height:100%;
+}
+
+::-webkit-scrollbar{
+  width:4px;
+}
+
+::-webkit-scrollbar-track{
+  background:rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb{
+  background:rgb(171, 117, 196);
+}
+
+.jumbotron{
+  background:rgb(17, 17, 25);
+  color:rgb(211, 127, 165);
+}
+
+#login-btn{
+  background:rgb(124, 58, 167);
+  border-color:rgb(73, 29, 127);
+  border-radius:4px;
+  padding:8px;
+}
+
+#signup-btn{
+  background:rgb(73, 29, 127);
+  border-radius:4px;
+  border-color:rgb(47, 17, 98);
+  padding:8px;
+}
+
+.form-control{
+  border-color:rgb(124, 58, 167);
+  border-width:2px;
+  font-weight:bolder;
+  background:rgb(17, 17, 25);
+  width:70%;
+  color:rgb(171, 117, 196);
+}
+.form-control:focus{
+  background:rgb(47, 17, 98);
+  color:rgb(211, 127, 127);
+}
+
+.mainpage{
+  font-family:Arial, Helvetica, sans-serif;
+  height:100%;
+  width:100%;
+  color:rgb(224, 196, 209);
+}
+
+.mainpage strong{
+  color:rgb(206, 137, 83);
+}
+
+.mainpage h3{
+  color:rgb(231, 184, 81);
+}
+
+.profile-column{
+  background:rgb(17, 17, 25);
+  width:30%;
+  float:left;
+  height:100%;
+  border-right: rgb(31, 29, 42) solid 2px;
+  line-height:1em;
+}
+
+.results-box{
+  text-align:right;
+  float:right;
+  background:rgb(14, 14, 20);
+  width:70%;
+  height:100%;
+}
+
+.profile-content{
+  padding:15px;
+  padding-left:10%;
+}
+
+.user-info-box{
+  border:rgb(31, 29, 42) solid 2px;
+  border-radius:4px;
+  background:rgb(9, 5, 14);
+  color:rgb(186, 143, 64);
+  margin-bottom:15px;
+  padding:5px;
+}
+
+.results-box header{
+  padding:15px;
+  padding-right:10%;
+}
+
+.content-box{
+  width:100%;
+  height:75%;
+  background:rgb(6, 3, 7);
+  overflow-y:scroll;
+  text-align:center;
+}
+
+.content-box img{
+  min-width:20%;
+  max-width:25%;
+  display:inline-block;
+  margin:5px;
+}
+
+.content{
+  margin:15px auto;
+}
+
+#search-box{
+  border:rgb(31, 29, 42) solid 2px;
+  border-radius:4px;
+  padding:5px;
+  padding-left:10px;
+  width:60%;
+  background:rgb(4, 3, 7);
+  color:rgb(209, 116, 144);
+}
+
+#search-box::placeholder{
+  color:rgb(69, 60, 83);
+}
+
+@media only screen and (max-width: 700px){
+  .content img{
+    min-width:50%;
+  }
+}
