@@ -22,8 +22,22 @@ module.exports = function(app) {
     });
   });
 
-  app.get("/mainpage", function(req, res) {
-    res.render("mainpage");
+  //once logged in redirected to this page
+  app.get("/private", function(req, res) {
+    res.send("You are logged in");
+  });
+
+  //sign up
+  app.get("/signup", function(req, res) {
+    res.render("signup", {});
+  });
+  //login
+  app.get("/login", function(req, res) {
+    res.render("login ", {});
+    // =======
+    //   app.get("/mainpage", function(req, res) {
+    //     res.render("mainpage");
+    // >>>>>>> master
   });
 
   // Render 404 page for any unmatched routes
