@@ -22,7 +22,7 @@ module.exports = function(app) {
     });
   });
 
-  app.get("/mainpage", function(req, res){
+  app.get("/mainpage", function(req, res) {
     res.render("mainpage");
   });
 
