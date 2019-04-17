@@ -1,0 +1,29 @@
+{{!-- <div>
+    <form action="/api/login" method="POST">
+    <input placeholder="Email" name="email">
+    <input placeholder="Password" type="password" name="password">
+    <button>login</button>
+    </form>
+</div> --}}
+<div>
+    <form id="sampleLogin">
+        <input placeholder="Email" class="email">
+        <input placeholder="Password" type="password" class="password">
+        <button>Login</button>
+    </form>
+</div>
+
+<script>
+    $("#sampleLogin").on("submit", function(event) {
+        console.log("asdfadsf")
+        event.preventDefault();
+        var userData = {
+            email: $(".email").val().trim(),
+            password: $(".password").val().trim()
+        };
+        $.post("/api/login", userData).then(function(data) {
+            window.location.replace(data);
+        })
+    });
+
+</script> 
