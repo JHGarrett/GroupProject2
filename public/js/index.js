@@ -42,7 +42,7 @@ $(document).ready(function() {
       .then(function(res) {
         console.log(res);
         console.log("Taking you to main page");
-        window.location.replace("/private");
+        window.location.replace("/mainpage");
       })
       .catch(function(err) {
         alert("Sorry, username or password is incorrect.");
