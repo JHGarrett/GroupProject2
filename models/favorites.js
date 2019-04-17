@@ -7,7 +7,7 @@ module.exports = function(sequelize, DataTypes) {
   });
 
   Favorites.associate = function(models) {
-    models.Favorite.belongsTo(models.User);
+    models.Favorites.belongsTo(models.User);
   };
   return Favorites;
 };
