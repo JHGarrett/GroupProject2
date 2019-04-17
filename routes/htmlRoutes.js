@@ -23,7 +23,7 @@ module.exports = function(app) {
   });
 
   app.get("/mainpage", function(req, res) {
-    res.render("mainpage");
+    res.render("mainpage", {});
   });
 
   // Render 404 page for any unmatched routes

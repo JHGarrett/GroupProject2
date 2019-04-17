@@ -98,6 +98,10 @@ body {
   display:inline-block;
 }
 
+#profile-pic{
+  float:left;
+}
+
 .user-info-box {
   border: rgb(31, 29, 42) solid 2px;
   border-radius: 4px;
