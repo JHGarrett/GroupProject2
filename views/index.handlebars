@@ -3,6 +3,8 @@
     <div class="jumbotron">
       <h1 class="display-4">{{msg}}</h1>
       <p class="lead">Please Login or Sign up!</p>
+      <a id="login-btn" class="btn btn-primary btn-lg" href="#" role="button">Login</a>
+      <a id="signup-btn" class="btn btn-primary btn-lg" href="#" role="button">Sign Up</a>
       <hr class="my-4">
       <form id="login-form">
         <div class="form-group">
@@ -16,7 +18,8 @@
         <button id="login-submit" type="submit" class="btn btn-primary">Submit</button>
         <hr class="my-2">
       </form>
-      <form id="signup-form">
+
+      <form id="signup-form" style="display:none">
         <div class="form-group">
           <label for="usernameSignup">Username</label>
           <input type="name" class="form-control" id="usernameSignup" placeholder="Enter username" required>
@@ -33,8 +36,7 @@
         <button id="signup-submit" type="submit" class="btn btn-primary">Submit</button>
         <hr class="my-2">
       </form>
-      <a id="login-btn" class="btn btn-primary btn-lg" href="#" role="button">Login</a>
-      <a id="signup-btn" class="btn btn-primary btn-lg" href="#" role="button">Sign Up</a>
+
     </div>
   </div>
 </div>
