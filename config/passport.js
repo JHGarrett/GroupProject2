@@ -3,6 +3,21 @@ var LocalStrategy = require("passport-local").Strategy;
 
 var db = require("../models");
 
+passport.serializeUser((user, done) => {
+  done(null, user.id);
+});
+
+passport.deserializeUser((id, done) => {
+  // console.log(`id: ${id}`);
+  User.findById(id)
+    .then(user => {
+      done(null, user);
+    })
+    .catch(error => {
+      console.log(`Error: ${error}`);
+    });
+});
+
 // lets passport know that we want to sign in locally with a user name or email and passwork
 passport.use(
   new LocalStrategy(
@@ -42,13 +57,13 @@ passport.use(
 
 // passport needs to serialize everyuser for http issues. this will
 // assign them one and remove it if needed.
-passport.serializeUser(function(user, cb) {
-  cb(null, user);
-});
+// passport.serializeUser(function(user, cb) {
+//   cb(null, user);
+// });
 
-passport.deserializeUser(function(obj, cb) {
-  cb(null, obj);
-});
+// passport.deserializeUser(function(obj, cb) {
+//   cb(null, obj);
+// });
 
 // Exporting passport
 module.exports = passport;

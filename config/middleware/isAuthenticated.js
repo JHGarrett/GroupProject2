@@ -2,7 +2,6 @@
 module.exports = function(req, res, next) {
   // If the user is logged in, continue with the request to the  route
   if (req.user) {
-    // console.log(""+ next);
     return next();
   }
 
