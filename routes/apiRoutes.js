@@ -92,6 +92,6 @@ module.exports = function(app) {
   //find user if login exists
   app.post("/api/login", passport.authenticate("local"), function(req, res){
   //redirect them to page..
-    res.json("/private");
+    res.json("/mainpage");
   });
 };
