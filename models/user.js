@@ -31,7 +31,7 @@ module.exports = function(sequelize, DataTypes) {
   });
 
   User.associate = function(models) {
-    models.User.hasMany(models.Favorite);
+    models.User.hasMany(models.Favorites);
   };
 
   return User;
