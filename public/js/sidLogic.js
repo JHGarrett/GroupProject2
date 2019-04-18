@@ -22,7 +22,7 @@ $(document).ready(function() {
   });
 
   // get movies function
-  function getTasteDive(searchArray) {
+  function getTasteDive(searchArray, searchArray2) {
     var apiCall =
       "https://cors-ut-bootcamp.herokuapp.com/https://tastedive.com/api/similar?k=334692-foreel-UBKAMU7G&type=movie&q=";
 
