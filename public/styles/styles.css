@@ -56,6 +56,30 @@ body {
   color: rgb(211, 127, 127);
 }
 
+.userpage-group{
+  width:75%;
+  height:100%;
+  margin:0 auto;
+  padding:50px;
+  background:rgb(17, 17, 25);
+}
+
+
+.list-group{
+  width:47%;
+  padding:15px;
+  float:left;
+  background:rgb(17, 17, 25);
+}
+
+.right{
+  margin-left:5px;
+}
+
+.centering-div{
+margin:0 auto;
+}
+
 .mainpage {
   font-family: Arial, Helvetica, sans-serif;
   height: 100%;
