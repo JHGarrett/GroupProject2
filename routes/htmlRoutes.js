@@ -22,13 +22,11 @@ module.exports = function(app) {
     });
   });
 
-  //once logged in redirected to this page
-  // app.get("/private", function(req, res) {
-  //   res.send("You are logged in");
-  // });
   app.get("/mainpage", function(req, res) {
     console.log(req.user.name);
-    res.render("mainpage", { name: req.user.name });
+    var userName = req.user.name;
+    var nameCapitalized = userName.charAt(0).toUpperCase() + userName.slice(1);
+    res.render("mainpage", { name: nameCapitalized });
   });
 
   app.get("/profile", function(req, res) {
