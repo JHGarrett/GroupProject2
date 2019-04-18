@@ -27,6 +27,7 @@ $(document).ready(function() {
 
   $loginSubmit.on("click", function(event) {
     event.preventDefault();
+
     var login = {
       email: $("#usernameLogin")
         .val()
@@ -35,6 +36,7 @@ $(document).ready(function() {
         .val()
         .trim()
     };
+
     $.ajax("/api/login/", {
       method: "POST",
       data: login
@@ -43,6 +45,7 @@ $(document).ready(function() {
         console.log(res);
         console.log("Taking you to main page");
         window.location.replace("/mainpage");
+        // $("#nameHeader").text(User.name);
       })
       .catch(function(err) {
         alert("Sorry, username or password is incorrect.");

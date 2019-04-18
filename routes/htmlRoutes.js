@@ -27,7 +27,8 @@ module.exports = function(app) {
   //   res.send("You are logged in");
   // });
   app.get("/mainpage", function(req, res) {
-    res.render("mainpage", {});
+    console.log(req.user.name);
+    res.render("mainpage", { name: req.user.name });
   });
 
   //sign up
