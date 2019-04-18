@@ -58,7 +58,7 @@ function getMoviePosters(movieTitles) {
 
       for (i = 0; i < movies.length; i++) {
         var posterPath = movies[i].poster_path;
-        var movImg = "https://image.tmdb.org/t/p/w92";
+        var movImg = "https://image.tmdb.org/t/p/w342";
 
         // console.log(movImg + posterPath);
 
