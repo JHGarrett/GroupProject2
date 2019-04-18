@@ -31,6 +31,10 @@ module.exports = function(app) {
     res.render("mainpage", { name: req.user.name });
   });
 
+  app.get("/profile", function(req, res) {
+    res.render("profile", {});
+  });
+
   //sign up
   app.get("/signup", function(req, res) {
     res.render("signup", {});
