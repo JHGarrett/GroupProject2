@@ -51,6 +51,7 @@ body {
   width: 70%;
   color: rgb(171, 117, 196);
 }
+
 .form-control:focus {
   background: rgb(47, 17, 98);
   color: rgb(211, 127, 127);
@@ -73,7 +74,8 @@ body {
 }
 
 .right{
-  margin-left:5px;
+float:right;
+
 }
 
 .centering-div{
@@ -167,17 +169,29 @@ margin:0 auto;
 }
 
 #search-box {
-  border: rgb(31, 29, 42) solid 2px;
+  border: rgb(31, 29, 42) solid 1px;
   border-radius: 4px;
   padding: 5px;
   padding-left: 10px;
   width: 50%;
   background: rgb(4, 3, 7);
   color: rgb(209, 116, 144);
+  margin-bottom:15px;
+  clear:both;
 }
 
 #search-box::placeholder {
   color: rgb(69, 60, 83);
+}
+
+#submit{
+  border:rgb(105, 92, 122) solid 2px;
+  background:rgb(69, 60, 83);
+}
+
+#submit:hover{
+  background:rgb(31, 29, 42);
+  color:rgb(224, 196, 209);
 }
 
 @media only screen and (min-width: 700px){
