@@ -13,15 +13,39 @@ module.exports = function(app) {
 
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
-    db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
+    db.Example.findOne({ where: { id: req.params.id } }).then(function(
+      dbExample
+    ) {
       res.render("example", {
         example: dbExample
       });
     });
   });
 
-  // Render 404 page for any unmatched routes
-  app.get("*", function(req, res) {
-    res.render("404");
+  //once logged in redirected to this page
+  // app.get("/private", function(req, res) {
+  //   res.send("You are logged in");
+  // });
+  app.get("/mainpage", function(req, res) {
+    console.log(req.user.name);
+    res.render("mainpage", { name: req.user.name });
+  });
+
+  app.get("/profile", function(req, res) {
+    res.render("profile", {});
+  });
+
+  //sign up
+  app.get("/signup", function(req, res) {
+    res.render("signup", {});
+  });
+  //login
+  app.get("/login", function(req, res) {
+    res.render("login ", {});
+
+    // Render 404 page for any unmatched routes
+    app.get("*", function(req, res) {
+      res.render("404");
+    });
   });
 };

@@ -11,19 +11,38 @@
   },
   "license": "ISC",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "dotenv": "^6.0.0",
-    "express": "^4.16.3",
-    "express-handlebars": "^3.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "express-session": "^1.16.1",
+    "ipaddr.js": "^1.9.0",
     "mysql2": "^1.6.4",
-    "sequelize": "^4.41.2"
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "prettier": "^1.17.0",
+    "sequelize": "^4.43.2"
   },
   "devDependencies": {
     "chai": "^4.1.2",
     "chai-http": "^4.0.0",
     "cross-env": "^5.2.0",
     "eslint": "^4.19.1",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-config-prettier": "^4.1.0",
     "mocha": "^5.2.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JHGarrett/GroupProject2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/JHGarrett/GroupProject2/issues"
+  },
+  "homepage": "https://github.com/JHGarrett/GroupProject2#readme"
 }
