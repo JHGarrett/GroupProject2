@@ -68,6 +68,12 @@ $(document).ready(function() {
       $("#passwordMatch").text("Your passwords don't match!");
     } else {
       var signup = {
+        name: $("#nameSignup")
+          .val()
+          .trim(),
+        lastName: $("#lastNameSignup")
+          .val()
+          .trim(),
         email: $("#usernameSignup")
           .val()
           .trim(),
