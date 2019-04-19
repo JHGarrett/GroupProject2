@@ -75,7 +75,7 @@ $(document).ready(function() {
             console.log("Couldn't load image");
             $(".content").append(
               `
-                <img src="https://via.placeholder.com/200x325" id = "${movieThumbnail}">
+                <img src="../images/Placeholder.jpg" id = "${movieThumbnail}">
               `
             );
           }
