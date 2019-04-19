@@ -1,11 +1,12 @@
 {
   "development": {
-    "username": "root",
-    "password": "Thebleepingcat96!",
-    "database": "testdb",
-    "host": "localhost",
-    "dialect": "mysql"
-  },
+    "username": "y7n9ju9f06n64kcw",
+    "password": "aqu1kwumoupmu8ii",
+    "database": "sw1fcnoyvr3lhobl",
+    "host": "ctgplw90pifdso61.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql",
+    "port": 3306
+   },
   "test": {
     "username": "root",
     "password": "root",
