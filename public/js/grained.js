@@ -132,7 +132,7 @@
 
     var rule = "background-image: url(" + noise + ");";
     rule +=
-      'position: absolute;content: "";height: 300%;width: 300%;left: -100%;top: -100%;';
+      "position: absolute;content: '';height: 300%;width: 300%;left: -100%;top: -100%;";
     pre = prefixes.length;
     if (options.animate) {
       while (pre--) {
