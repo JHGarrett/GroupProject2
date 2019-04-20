@@ -24,14 +24,15 @@
         </div>
     </div> --}}
 
+            
 {{!-- navbar --}}
 <nav>
     <h1 id=>Logo </h1>
 
-    <div class="navSearchItems">
+     <div class="navSearchItems">
         <div class="dropdown">
   
-      <a id="nav-item" href="#"><span id="nameHeader">{{name}}</span></a>
+      <a id="nav-item" href="#"><span id="nameHeader">Welcome {{name}}</span></a>
      
         <div class="dropdown-content">
             <a id="nav-item" href="#">Search</a>
@@ -44,17 +45,108 @@
 </nav>
 
 {{!-- mainpage - recommendation serach bar --}}
+
 <div class="jumbotron jumbotron-fluid" id="searchJumbotron">
+  <div class="container">
+            <ul>
+		<li>P</li>
+		<li>O</li>
+		<li>P</li>
+		<li>C</li>
+        <li>O</li>
+		<li>R</li>
+		<li style="margin-right:50px">N</li>
+		<li>N</li>
+		<li>I</li>
+		<li>G</li>
+		<li>H</li>
+		<li>T</li>
+
+
+            </ul>
+	
+
+    <div class="display-12"> 
+  
+		</div>
+    <form id="search-form">
+        
+        <div class="row">
+        
+
+            <div class="col-md-3">
+                {{!-- empty --}}
+            </div>
+            <div class="col-md-4">
+                <img src="/images/Webp.net-compress-image.jpg" alt="MOVIE POSTER 1" class="searchMovieImg">
+            </div>
+            <div class="col-md-4">
+                <img src="/images/hermes_rivera_469608_xqJqZ.jpg" alt="MOVIE POSTER 2" class="searchMovieImg">
+            </div>
+             <div class="col-md-3">
+                {{!-- empty --}}
+            </div>
+        </div>
+    <p class="lead">Pick two movies and we will give you recommendations based on your choices</p>
+
+        <div class="row">
+
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="search" id="search-box" placeholder="Movie 1...">
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="search" id="search-box-2" placeholder="Movie 2...">
+            </div>
+                <div class="col-md-3">
+            </div>
+                
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                    {{!-- empty --}}
+            </div>
+           
+             {{!-- <div class="col-md-3">
+             <input style="margin-right: 50px" type="button" id="submit" value="Get Recomendations">
+            </div> --}}
+            <div class="col-md-4">
+                    {{!-- empty --}}
+            </div>
+
+            </div>
+            <div class="row">
+                 <a id="submit" value="Get Recomendations" href="#">
+		<svg><rect></rect></svg>SUBMIT</a>
+
+            <div class="col-md-3">
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+            
+        </div>
+    </form>
+  </div>
+</div>
+
+{{!-- <div class="jumbotron jumbotron-fluid" id="searchJumbotron">
+    
 
     <div class="container">
 
         <p id="instructions">Pick two movies and we'll give you recommendations based on your choices.</p>
         <form id="search-form">
-            <div class="row">
+            <div class="row"> --}}
 
-                <div class="col-md-3">
+                {{!-- <div class="col-md-3"> --}}
                     {{!-- empty --}}
-                </div>
+                {{!-- </div>
                 <div class="col-md-3">
                     <img src="https://place-hold.it/150x213" alt="Movie Poster 1" class="searchMovieImg">
                 </div>
@@ -62,45 +154,45 @@
                 <div class="col-md-3">
                     <img src="https://place-hold.it/150x213" alt="Movie Poster 2" class="searchMovieImg" id="movie2">
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3"> --}}
                     {{!-- empty  --}}
-                </div>
+                {{!-- </div>
             </div>
-            <div class="row">
+            <div class="row"> --}}
 
 
-                <div class="col-md-3">
+                {{!-- <div class="col-md-3"> --}}
                     {{!-- empty --}}
-                </div>
+                {{!-- </div>
                 <div class="col-md-3">
-                    <input type="text" class="search" id="search-box" placeholder="Movie 1...">
+                    <input type="text" class="search" id="search-bar" placeholder="Movie 1...">
                 </div>
                 <div class="col-md-3">
                     <input type="text" class="search" id="search-box-2" placeholder="Movie 2...">
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3"> --}}
                     {{!-- empty  --}}
-                </div>
+                {{!-- </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4"> --}}
                     {{!-- empty --}}
-                </div>
+                {{!-- </div>
                 <div class="col-md-3">
                     <input type="button" id="submit" value="Get Recomendations">
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-5"> --}}
                     {{!-- empty --}}
-                </div>
+                {{!-- </div>
             </div>
         </form>
     </div>
-</div>
+</div> --}}
 
 
 {{!-- Results --}}
-<div class="jumbotron jumbotron-fluid">
-    <h2 class="subTitle">Recommendations:</h2>
+<div style="background-color:black"  class="jumbotron jumbotron-fluid">
+    <h2 class="subTitle">You should check out:</h2>
     <div class="results-box">
 
 

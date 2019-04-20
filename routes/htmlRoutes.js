@@ -34,7 +34,7 @@ module.exports = function(app) {
     var lastNameCapitalized =
       userLastName.charAt(0).toUpperCase() + userLastName.slice(1);
     res.render("mainpage", {
-      name: nameCapitalized + " " + lastNameCapitalized
+      name: nameCapitalized
     });
   });
 
