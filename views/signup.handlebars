@@ -7,14 +7,14 @@
 </div>
 
 <script>
-    $("#sampleSignup").on("submit", function(event) {
+    $("#sampleSignup").on("submit", function (event) {
         console.log("asdfadsf")
         event.preventDefault();
         var userData = {
             email: $(".email").val().trim(),
             password: $(".password").val().trim()
         };
-        $.post("/api/signup", userData).then(function(data) {
+        $.post("/api/signup", userData).then(function (data) {
             window.location.replace(data);
         })
     });

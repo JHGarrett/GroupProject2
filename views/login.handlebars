@@ -14,14 +14,14 @@
 </div>
  
 <script>
-    $("#johnap").on("submit", function(event) {
+    $("#johnap").on("submit", function (event) {
         console.log("asdfadsf")
         event.preventDefault();
         var userData = {
             email: $(".email").val().trim(),
             password: $(".password").val().trim()
         };
-        $.post("/api/login", userData).then(function(data) {
+        $.post("/api/login", userData).then(function (data) {
             window.location.replace(data);
         })
     });

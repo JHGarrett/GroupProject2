@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: 'Signika', sans-serif;
+  font-family: "Signika", sans-serif;
   background: rgb(17, 17, 17);
   color: lightslategrey;
   height: 100%;
@@ -63,20 +63,19 @@ body {
   color: rgb(211, 127, 127);
 }
 
-.userpage-group{
-  width:75%;
-  height:100%;
-  margin:0 auto;
-  padding:50px;
-  background:rgb(17, 17, 25);
+.userpage-group {
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  background: rgb(17, 17, 25);
 }
 
-
-.list-group{
-  width:47%;
-  padding:15px;
-  float:left;
-  background:rgb(17, 17, 25);
+.list-group {
+  width: 47%;
+  padding: 15px;
+  float: left;
+  background: rgb(17, 17, 25);
 }
 
 /* .right{
@@ -84,8 +83,8 @@ float:right;
 
 } */
 
-.centering-div{
-margin:0 auto;
+.centering-div {
+  margin: 0 auto;
 }
 
 .mainpage {
@@ -121,17 +120,17 @@ margin:0 auto;
 } */
 
 .profile-content {
-  float:left;
+  float: left;
   padding: 15px;
   padding-left: 10%;
 }
 
-.profile-content header{
-  display:inline-block;
+.profile-content header {
+  display: inline-block;
 }
 
-#profile-pic{
-  float:left;
+#profile-pic {
+  float: left;
 }
 
 .user-info-box {
@@ -162,18 +161,17 @@ margin:0 auto;
   display: inline-block;
   margin: 5px;
 
-  transition:min-width .25s, border-width .25s;
+  transition: min-width 0.25s, border-width 0.25s;
 }
 
-.content-box img:hover{
-  cursor:pointer;
-  border:rgb(186, 143, 64) solid 4px;
+.content-box img:hover {
+  cursor: pointer;
+  border: rgb(186, 143, 64) solid 4px;
 }
 
 .content {
   margin: 15px auto;
 }
-
 
 /* #search-box {
   border: rgb(31, 29, 42) solid 1px;
@@ -191,25 +189,25 @@ margin:0 auto;
   color: rgb(69, 60, 83);
 }
 
-#submit{
-  width:120px;
-  border:rgb(105, 92, 122) solid 2px;
-  border-radius:4px;
-  background:rgb(69, 60, 83);
-  transition: color .25s, background .25s;
+#submit {
+  width: 120px;
+  border: rgb(105, 92, 122) solid 2px;
+  border-radius: 4px;
+  background: rgb(69, 60, 83);
+  transition: color 0.25s, background 0.25s;
 }
 
-#submit:hover{
-  cursor:pointer;
-  background:rgb(31, 29, 42);
-  color:rgb(224, 196, 209);
-  border-color:rgb(51, 40, 96);
+#submit:hover {
+  cursor: pointer;
+  background: rgb(31, 29, 42);
+  color: rgb(224, 196, 209);
+  border-color: rgb(51, 40, 96);
 }
 
-@media only screen and (min-width: 700px){
-  .content-box img:hover{
-    cursor:pointer;
-    min-width:30%;
+@media only screen and (min-width: 700px) {
+  .content-box img:hover {
+    cursor: pointer;
+    min-width: 30%;
   }
 }
 
@@ -218,9 +216,8 @@ margin:0 auto;
     min-width: 66%;
   }
 
-  .content-box img:hover{
-    cursor:pointer;
-    
+  .content-box img:hover {
+    cursor: pointer;
   }
 }
 
@@ -238,7 +235,7 @@ nav {
 }
 
 nav h1 {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   color: white;
   font-size: 30px;
   padding: 10px 0;
@@ -251,10 +248,10 @@ nav h1 {
   color: white;
   font-size: 1.2rem;
   margin: 0 20px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .navSearchItems a:hover {
-  color: #BFBFBF;
+  color: #bfbfbf;
 }
 /* log in page */
 .form-section-small {
@@ -270,33 +267,30 @@ nav h1 {
   flex-direction: column;
 }
 /* movie recoomendation div */
-#searchJumbotron{
-  
-  font-family: 'Open Sans', sans-serif;
+#searchJumbotron {
+  font-family: "Open Sans", sans-serif;
   margin: 80px 65px;
   border-radius: 25px;
-
 }
-#instructions{
+#instructions {
   margin-top: 50px;
   text-align: center;
   font-size: 20px;
 }
-.searchBox{
-  width:150px
+.searchBox {
+  width: 150px;
 }
-.searchMovieImg{
+.searchMovieImg {
   margin-bottom: 30px;
-  margin-top: 40px
+  margin-top: 40px;
 }
-#submit{
+#submit {
   margin-top: 40px;
   margin-bottom: 150px;
 }
 .subTitle {
   text-align: center;
 }
-
 
 .dropdown {
   position: relative;
@@ -309,50 +303,50 @@ nav h1 {
   position: absolute;
   background: rgb(40, 40, 40);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
 }
 .dropdown:hover .dropdown-content {
   display: block;
 }
-#dropDown{
+#dropDown {
   transform: rotate(90deg);
   transform: scaleX(-1);
 }
-#logo{
+#logo {
   margin-left: 30px;
 }
-#movie2{
-  margin-left:45px;
+#movie2 {
+  margin-left: 45px;
 }
-#search-box-2{
-  margin-left:45px;
+#search-box-2 {
+  margin-left: 45px;
 }
 /* ========================================================== */
 
 body {
   font-size: 12px;
   max-width: 10000px;
-  background: #F5F5F5;
+  background: #f5f5f5;
   min-width: 960px;
   width: 100%;
   font-family: Roboto;
   text-rendering: optimizeLegibility;
-/* 2 */
+  /* 2 */
   -webkit-font-smoothing: antialiased;
-/* 3 */
+  /* 3 */
   -moz-osx-font-smoothing: grayscale;
-/* 4 */
+  /* 4 */
 }
 
 p {
   font-feature-settings: "kern" 1;
-/* 5 */
+  /* 5 */
   font-kerning: normal;
-/* 5 */
+  /* 5 */
   hyphens: auto;
-/* 6 */
+  /* 6 */
 }
 
 .fullwidth,
@@ -378,7 +372,7 @@ h2 {
   display: -ms-flexbox;
   display: -webkit-flex;
   margin-top: -10px;
-  color: rgb(207, 127, 163)
+  color: rgb(207, 127, 163);
 }
 
 .control-label {
@@ -434,7 +428,7 @@ h2 {
   overflow: hidden;
   margin-left: 50%;
   position: absolute;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .toplam {
@@ -448,7 +442,7 @@ h2 {
 .left {
   width: 50%;
   height: 100%;
-  background: #2C3034;
+  background: #2c3034;
   left: 0;
   position: absolute;
 }
@@ -482,7 +476,7 @@ h2 {
   margin-bottom: 30px;
 }
 
-form#sampleSignup input {
+form#signup-form input {
   border-bottom: 1px solid #cdcdcd;
   color: #959595;
   font-size: 14px;
@@ -497,30 +491,30 @@ form#sampleSignup input {
   background: none;
   border-top: 0;
   overflow: hidden;
-  transition: border .2s;
-  -webkit-transition: border .2s;
+  transition: border 0.2s;
+  -webkit-transition: border 0.2s;
 }
 
-#sampleSignup .form-group {
+#signup-form .form-group {
   width: 100%;
   float: left;
   margin-bottom: 20px;
-  color: rgb(207, 127, 163)
+  color: rgb(207, 127, 163);
 }
 
-#sampleSignup h2 {
+#signup-form h2 {
   font-size: 28px;
   font-weight: 400;
   color: rgb(207, 127, 163);
   line-height: 35px;
 }
 
-#sampleSignup .soninpt {
+#signup-form .soninpt {
   margin-bottom: 30px;
 }
 
-.left form#sampleSignup input {
-  border-bottom: 1px solid #45494C;
+.left form#signup-form input {
+  border-bottom: 1px solid #45494c;
 }
 
 .left .control-label {
@@ -537,7 +531,7 @@ form#sampleSignup input {
   margin-right: 0;
 }
 
-form#sampleSignup .johnbtn {
+form#signup-form .johnbtn {
   width: auto;
   float: right;
   background: rgb(207, 127, 163);
@@ -556,24 +550,25 @@ form#sampleSignup .johnbtn {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
   -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
-  -webkit-transition-property: background-color,-webkit-box-shadow;
-  transition-property: background-color,box-shadow;
+  -webkit-transition-property: background-color, -webkit-box-shadow;
+  transition-property: background-color, box-shadow;
   border: 0;
 }
 
-form#sampleSignup .johnbtn:hover {
+form#signup-form .johnbtn:hover {
   background: rgb(138, 27, 77);
-  -webkit-box-shadow: 0 4px 7px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0 4px 7px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
-  box-shadow: 0 4px 7px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-#moveleft, #moveright {
+#moveleft,
+#moveright {
   width: auto;
   float: right;
   background: none;
@@ -605,7 +600,7 @@ form#sampleSignup .johnbtn:hover {
 }
 
 #moveright:hover {
-  background: #363A3D;
+  background: #363a3d;
 }
 
 #fback {
@@ -620,7 +615,8 @@ form#sampleSignup .johnbtn:hover {
   right: 0;
   width: 50%;
   height: 100%;
-  background: #03A9F4 url(https://images.unsplash.com/photo-1512149177596-f817c7ef5d4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=945&q=80);
+  background: #03a9f4
+    url(https://images.unsplash.com/photo-1512149177596-f817c7ef5d4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=945&q=80);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -630,11 +626,12 @@ form#sampleSignup .johnbtn:hover {
   left: 0;
   width: 50%;
   height: 100%;
-  background: #03A9F4 url(https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80);
+  background: #03a9f4
+    url(https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80);
   background-size: cover;
   background-position: 50% 50%;
 }
-form#sampleLogin .johnbtn {
+form#login-form .johnbtn {
   width: auto;
   float: right;
   background: rgb(207, 127, 163);
@@ -653,23 +650,23 @@ form#sampleLogin .johnbtn {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
   -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
-  -webkit-transition-property: background-color,-webkit-box-shadow;
-  transition-property: background-color,box-shadow;
+  -webkit-transition-property: background-color, -webkit-box-shadow;
+  transition-property: background-color, box-shadow;
   border: 0;
 }
 
-form#sampleLogin .johnbtn:hover {
+form#login-form .johnbtn:hover {
   background: rgb(138, 27, 77);
-  -webkit-box-shadow: 0 4px 7px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0 4px 7px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
-  box-shadow: 0 4px 7px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
-form#sampleLogin input {
+form#login-form input {
   border-bottom: 1px solid #cdcdcd;
   color: #959595;
   font-size: 14px;
@@ -684,28 +681,28 @@ form#sampleLogin input {
   background: none;
   border-top: 0;
   overflow: hidden;
-  transition: border .2s;
-  -webkit-transition: border .2s;
+  transition: border 0.2s;
+  -webkit-transition: border 0.2s;
 }
 
-#sampleLogin .form-group {
+#login-form .form-group {
   width: 100%;
   float: left;
   margin-bottom: 20px;
-  color: rgb(207, 127, 163)
+  color: rgb(207, 127, 163);
 }
 
-#sampleLogin h2 {
+#login-form h2 {
   font-size: 28px;
   font-weight: 400;
   color: rgb(207, 127, 163);
   line-height: 35px;
 }
 
-#sampleLogin .soninpt {
+#login-form .soninpt {
   margin-bottom: 30px;
 }
 
-.left form#sampleLogin input {
-  border-bottom: 1px solid #45494C;
+.left form#login-form input {
+  border-bottom: 1px solid #45494c;
 }

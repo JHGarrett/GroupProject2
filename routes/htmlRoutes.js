@@ -43,11 +43,11 @@ module.exports = function(app) {
   });
 
   //sign up
-  app.get("/index", function(req, res) {
+  app.get("/signup", function(req, res) {
     res.render("signup", {});
   });
   //login
-  app.get("/index", function(req, res) {
+  app.get("/login", function(req, res) {
     res.render("login ", {});
 
     // Render 404 page for any unmatched routes
