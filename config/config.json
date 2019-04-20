@@ -1,11 +1,12 @@
 {
   "development": {
     "username": "root",
-    "password": "Thebleepingcat96!",
-    "database": "testdb",
+    "password": "root",
+    "database": "exampledb",
     "host": "localhost",
-    "dialect": "mysql"
-  },
+    "dialect": "mysql",
+    "port": 3306
+   },
   "test": {
     "username": "root",
     "password": "root",

@@ -1,50 +1,94 @@
-<div id="home">
-  <div class="container">
-    <div class="jumbotron">
-      <h1 class="display-4">{{msg}}</h1>
-      <p class="lead">Please Login or Sign up!</p>
-      <a id="login-btn" class="btn btn-primary btn-lg" href="#" role="button">Login</a>
-      <a id="signup-btn" class="btn btn-primary btn-lg" href="#" role="button">Sign Up</a>
-      <hr class="my-4">
-      <form id="login-form">
-        <div class="form-group">
-          <label for="usernameLogin">Email</label>
-          <input type="name" class="form-control" id="usernameLogin" placeholder="Enter Email" required>
-        </div>
-        <div class="form-group">
-          <label for="userPasswordLogin">Password</label>
-          <input type="password" class="form-control" id="userPasswordLogin" placeholder="Password" required>
-        </div>
-        <button id="login-submit" type="submit" class="btn btn-primary">Submit</button>
-        <hr class="my-2">
-      </form>
+<link
+  href='https://fonts.googleapis.com/css?family=Roboto:900,900italic,500,400italic,100,700italic,300,700,500italic,100italic,300italic,400'
+  rel='stylesheet' type='text/css'>
 
-      <form id="signup-form" style="display:none">
-        <div class="form-group">
-          <label for="usernameSignup">Name</label>
-          <input type="name" class="form-control" id="nameSignup" placeholder="Enter name" required>
-        </div>
-        <div class="form-group">
-          <label for="usernameSignup">Last Name</label>
-          <input type="name" class="form-control" id="lastNameSignup" placeholder="Enter last name" required>
-        </div>
-        <div class="form-group">
-          <label for="usernameSignup">Email</label>
-          <input type="name" class="form-control" id="usernameSignup" placeholder="Enter email" required>
-        </div>
-        <div class="form-group">
-          <label for="userPasswordSignup">Password</label>
-          <input type="password" class="form-control" id="userPasswordSignup" placeholder="Password" required>
-        </div>
-        <div class="form-group">
-          <label for="confirmPassword">Re-enter Password</label>
-          <input type="password" class="form-control" id="confirmPassword" placeholder="Password" required>
-          <small id="passwordMatch" class="form-text"></small>
-        </div>
-        <button id="signup-submit" type="submit" class="btn btn-primary">Submit</button>
-        <hr class="my-2">
-      </form>
+<div id="fback">
+  <div class="johnback"></div>
+  <div class="garrettback"></div>
+</div>
 
+<div id="textbox">
+  <div class="toplam">
+
+    <div class="left">
+      <div id="ic">
+        <h2>Sign Up</h2>
+        <p>Welcome new friend. You are about to sign up for the greatest site in existance... at least that's what my
+          Mom says.</p>
+        {{!-- <form id="johnap" name="signup_form" id="signup_form" action="/api/signup" method="post" enctype="multipart/form-data" onsubmit="return false;"> --}}
+        <form id="signup-form">
+          <div class="john form-group">
+            <label class="control-label" for="usernameSignup">First Name</label>
+            <input type="name" id="nameSignup" class="form-control" cols="50" rows="10"></input>
+          </div>
+          <div class="john sn form-group">
+            <label class="control-label" for="usernameSignup">Last Name</label>
+            <input type="name" id="lastNameSignup" value="" class="form-control" cols="50" rows="10"></input>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="usernameSignup">Email</label>
+            <input type="name" id="usernameSignup" class="form-control" cols="50" rows="10"></input>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="userPasswordSignup">Password</label>
+            <input type="password" id="userPasswordSignup" value="" class="form-control" cols="50" rows="10"></input>
+          </div>
+
+          <input type="submit" name="signup-submit" id="signup-submit" value="Sign Up" class="johnbtn" />
+        </form>
+
+        <button id="moveright">Login</button>
+      </div>
     </div>
+
+    <div class="right">
+      <div id="ic">
+        <h2>Login</h2>
+        <p>Welcome back! We have seperation issues... We really missed you. </p>
+        <form id="login-form">
+
+          <div class="form-group">
+            <label class="control-label" for="usernameLogin">Email</label>
+            <input type="name" class="email form-control" id="usernameLogin" cols="50" rows="10"></input>
+          </div>
+          <div class="form-group soninpt">
+            <label class="control-label" for="userPasswordLogin">Password</label>
+            <input type="password" id="userPasswordLogin" class="password form-control" cols="50" rows="10"></input>
+          </div>
+          <input type="submit" value="Login" name="login-submit" id="login-submit" class="johnbtn" tabindex="100" />
+        </form>
+
+        <button id="moveleft">Sign Up</button>
+      </div>
+    </div>
+
   </div>
 </div>
+
+<script>
+  $('.form-control').on('focus blur', function (e) {
+    $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+  }).trigger('blur');
+
+  $('#moveleft').click(function () {
+    $('#textbox').animate({
+      'marginLeft': "0" //moves left
+    });
+
+    $('.toplam').animate({
+      'marginLeft': "100%" //moves right
+    });
+  });
+
+  $('#moveright').click(function () {
+    $('#textbox').animate({
+      'marginLeft': "50%" //moves right
+    });
+
+    $('.toplam').animate({
+      'marginLeft': "0" //moves right
+    });
+  });
+
+
+</script>
