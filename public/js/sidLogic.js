@@ -4,6 +4,8 @@ $(document).ready(function() {
     // $(".posters").empty();
     // clearResults();
     $(".content").empty();
+    $("#search-box").empty();
+    $("#search-box-2").empty();
 
     let searchText = $("#search-box")
       .val()
