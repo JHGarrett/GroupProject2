@@ -23,10 +23,19 @@ module.exports = function(app) {
   });
 
   app.get("/mainpage", function(req, res) {
+    if (!req.user) {
+      return res.redirect("/");
+    }
+
     console.log(req.user.name);
     var userName = req.user.name;
+    var userLastName = req.user.lastName;
     var nameCapitalized = userName.charAt(0).toUpperCase() + userName.slice(1);
-    res.render("mainpage", { name: nameCapitalized });
+    var lastNameCapitalized =
+      userLastName.charAt(0).toUpperCase() + userLastName.slice(1);
+    res.render("mainpage", {
+      name: nameCapitalized + " " + lastNameCapitalized
+    });
   });
 
   app.get("/profile", function(req, res) {
