@@ -69,13 +69,41 @@ $(document).ready(function() {
 
           // console.log(movImg + posterPath);
 
-          $(".content").append(
+          /* $(".content").append(
             "<img src=" + movImg + posterPath + " id='movieThumbnail'>"
-          );
+          ); */
         }
+
+        // 20 results only
+        var dom = "";
+
+        for (var i = 0; i < 1; i++) {
+          dom += "<img class='posters' src=" + movImg + posterPath + ">";
+        }
+
+        $("#movPoster").append(dom);
+
+        console.log($("#movPoster"), $("#movPoster .posters"));
+
+        // this selects every godamn movie. edit: taking it from for loop cuts its to 20. wtf m8
+        $("#posters-container").on("click", ".posters", function() {
+          console.log("I clicked a poster!");
+          // for the video links
+          // tmdbVideoLink(movieID);
+        });
       })
       .catch(function(err) {
         console.log(err);
       });
+  }
+
+  // another api call for video/on click -- first finish the onclick
+  function tmdbVideoLink(movieID) {
+    var videoCall =
+      "http://api.themoviedb.org/3/movie/" +
+      movieID +
+      "/videos?api_key=248209b41efd69e17b54a070f19e9e35";
+
+    console.log(videoCall);
   }
 });
