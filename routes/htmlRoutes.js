@@ -22,20 +22,32 @@ module.exports = function(app) {
     });
   });
 
-  //once logged in redirected to this page
-  // app.get("/private", function(req, res) {
-  //   res.send("You are logged in");
-  // });
   app.get("/mainpage", function(req, res) {
-    res.render("mainpage", {});
+    if (!req.user) {
+      return res.redirect("/");
+    }
+
+    console.log(req.user.name);
+    var userName = req.user.name;
+    var userLastName = req.user.lastName;
+    var nameCapitalized = userName.charAt(0).toUpperCase() + userName.slice(1);
+    var lastNameCapitalized =
+      userLastName.charAt(0).toUpperCase() + userLastName.slice(1);
+    res.render("mainpage", {
+      name: nameCapitalized + " " + lastNameCapitalized
+    });
+  });
+
+  app.get("/profile", function(req, res) {
+    res.render("profile", {});
   });
 
   //sign up
-  app.get("/signup", function(req, res) {
+  app.get("/index", function(req, res) {
     res.render("signup", {});
   });
   //login
-  app.get("/login", function(req, res) {
+  app.get("/index", function(req, res) {
     res.render("login ", {});
 
     // Render 404 page for any unmatched routes
