@@ -248,10 +248,10 @@ nav h1 {
   color: white;
   font-size: 1.2rem;
   margin: 0 20px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .navSearchItems a:hover {
-  color: #bfbfbf;
+  color: #BFBFBF;
 }
 /* log in page */
 .form-section-small {

@@ -67,9 +67,18 @@ $(document).ready(function() {
 
           // console.log(movImg + posterPath);
 
-          $(".content").append(
-            "<img src=" + movImg + posterPath + " id='movieThumbnail'>"
-          );
+          if (posterPath !== null) {
+            $(".content").append(
+              "<img src=" + movImg + posterPath + " id='movieThumbnail'>"
+            );
+          } else {
+            console.log("Couldn't load image");
+            $(".content").append(
+              `
+                <img src="../images/Placeholder.jpg" id = "${movieThumbnail}">
+              `
+            );
+          }
         }
       })
       .catch(function(err) {
