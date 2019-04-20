@@ -23,9 +23,9 @@ module.exports = function(app) {
   });
 
   app.get("/mainpage", function(req, res) {
-    if (!req.user) {
-      return res.redirect("/");
-    }
+    // if (!req.user) {
+    //   return res.redirect("/");
+    // }
 
     console.log(req.user.name);
     var userName = req.user.name;
