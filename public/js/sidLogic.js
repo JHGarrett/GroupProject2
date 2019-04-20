@@ -86,3 +86,8 @@ $(document).ready(function() {
       });
   }
 });
+
+// Favorites Functionality
+$(".document").on("click", function() {
+  console.log("Clicked");
+});
