@@ -42,6 +42,10 @@ module.exports = function(app) {
     res.render("profile", {});
   });
 
+  app.get("/logout", function(req, res) {
+    req.logout();
+    res.redirect("/");
+  });
   //sign up
   app.get("/signup", function(req, res) {
     res.render("signup", {});

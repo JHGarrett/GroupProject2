@@ -35,7 +35,7 @@ body {
   margin-bottom: 0px;
 }
 
-#login-btn {
+/* #login-btn {
   background: rgb(124, 58, 167);
   border-color: rgb(73, 29, 127);
   border-radius: 4px;
@@ -47,9 +47,9 @@ body {
   border-radius: 4px;
   border-color: rgb(47, 17, 98);
   padding: 8px;
-}
+} */
 
-.form-control {
+/* .form-control {
   border-color: rgb(124, 58, 167);
   border-width: 2px;
   font-weight: bolder;
@@ -61,7 +61,7 @@ body {
 .form-control:focus {
   background: rgb(47, 17, 98);
   color: rgb(211, 127, 127);
-}
+} */
 
 .userpage-group {
   width: 75%;
@@ -235,7 +235,7 @@ nav {
 }
 
 nav h1 {
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: white;
   font-size: 30px;
   padding: 10px 0;
@@ -253,6 +253,9 @@ nav h1 {
 .navSearchItems a:hover {
   color: #bfbfbf;
 }
+
+
+
 /* log in page */
 .form-section-small {
   display: flex;
@@ -269,9 +272,9 @@ nav h1 {
 /* movie recoomendation div */
 #searchJumbotron {
   font-family: "Open Sans", sans-serif;
-  min-height: 50%;
+  min-height: 100%;
   margin: 80px 65px;
-  border-radius: 25px;
+  /* border-radius: 25px; */
 }
 #instructions {
   margin-top: 50px;
@@ -283,7 +286,7 @@ nav h1 {
 } */
 .searchMovieImg {
   margin-bottom: 30px;
-  margin-top: 40px;
+  margin-top: 160px;
 }
 /* #submit {
   margin-top: 40px;
@@ -445,6 +448,7 @@ h2 {
   width: 50%;
   height: 100%;
   background: #2c3034;
+  /* background: black; */
   left: 0;
   position: absolute;
 }
@@ -453,6 +457,7 @@ h2 {
   width: 50%;
   height: 100%;
   background: rgb(100, 98, 98);
+  /* background: rgb(17, 17, 17); */
   right: 0;
   position: absolute;
 }
@@ -726,6 +731,8 @@ ul li {
   font-size: 5em;
   letter-spacing: 18px;
   animation: ani 3.6s linear infinite;
+  margin-top: 65px;
+  margin-bottom:40px;
 }
 @keyframes ani {
   0% {
@@ -781,8 +788,8 @@ ul li:nth-child(12) {
 /* ==================================================================== */
 /* fancy submit button */
 
-a {
-  position: absolute;
+a{
+  /* position: absolute; */
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
