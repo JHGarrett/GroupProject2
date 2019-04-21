@@ -69,13 +69,18 @@ $(document).ready(function() {
 
           if (posterPath !== null) {
             $(".content").append(
-              "<img src=" + movImg + posterPath + " id='movieThumbnail'>"
+              "<img src=" +
+                movImg +
+                posterPath +
+                " id='" +
+                movies[i].title +
+                ">"
             );
           } else {
             console.log("Couldn't load image");
             $(".content").append(
               `
-                <img src="../images/Placeholder.jpg" id = "${movieThumbnail}">
+                <img src="../images/Placeholder.jpg" id = "${movies[i].title}">
               `
             );
           }
@@ -85,9 +90,6 @@ $(document).ready(function() {
         console.log(err);
       });
   }
-});
 
-// Favorites Functionality
-$(".document").on("click", function() {
-  console.log("Clicked");
+  // Favorites Functionality
 });

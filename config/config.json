@@ -2,14 +2,14 @@
   "development": {
     "username": "root",
     "password": "Thebleepingcat96!",
-    "database": "testdb",
+    "database": "exampledb",
     "host": "localhost",
     "dialect": "mysql",
     "port": 3306
    },
   "test": {
     "username": "root",
-    "password": "Thebleepingcat96!",
+    "password": "smash",
     "database": "testdb",
     "host": "localhost",
     "dialect": "mysql",
