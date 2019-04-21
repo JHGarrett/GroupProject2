@@ -269,7 +269,7 @@ nav h1 {
 /* movie recoomendation div */
 #searchJumbotron {
   font-family: "Open Sans", sans-serif;
-  min-height: 50%;
+  min-height: 70%;
   margin: 80px 65px;
   border-radius: 25px;
 }
@@ -831,7 +831,7 @@ a:hover svg rect {
 }
 #search-box,
 #search-box-2 {
-  max-width: 150px;
+  max-width: 153px;
   max-height: 40px;
   padding: 10px;
   margin: 20px auto 0 auto;
