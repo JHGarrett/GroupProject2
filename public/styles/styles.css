@@ -248,10 +248,10 @@ nav h1 {
   color: white;
   font-size: 1.2rem;
   margin: 0 20px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .navSearchItems a:hover {
-  color: #BFBFBF;
+  color: #bfbfbf;
 }
 /* log in page */
 .form-section-small {
@@ -711,112 +711,112 @@ form#login-form input {
 
 /* ==================================================================== */
 /* letter animation */
-ul{
+ul {
   position: absolute;
   left: 50%;
-  transform:translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   margin: 0;
   padding: 0;
   display: flex;
 }
-ul li{
+ul li {
   list-style: none;
-  color:  #484848;
+  color: #484848;
   font-family: arial;
   font-size: 5em;
   letter-spacing: 18px;
   animation: ani 3.6s linear infinite;
 }
 @keyframes ani {
-  0%{
+  0% {
     color: #484848;
     text-shadow: none;
   }
-  90%{
+  90% {
     color: #484848;
     text-shadow: none;
   }
-  100%{
+  100% {
     color: #fff900;
-    text-shadow: 0 0 7px #fff900,0 0 50px #ff6c00;
+    text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
   }
 }
-ul li:nth-child(1){
-  animation-delay: .3s;
+ul li:nth-child(1) {
+  animation-delay: 0.3s;
 }
-ul li:nth-child(2){
-  animation-delay: .6s;
+ul li:nth-child(2) {
+  animation-delay: 0.6s;
 }
-ul li:nth-child(3){
-  animation-delay: .9s;
+ul li:nth-child(3) {
+  animation-delay: 0.9s;
 }
-ul li:nth-child(4){
+ul li:nth-child(4) {
   animation-delay: 1.2s;
 }
-ul li:nth-child(5){
+ul li:nth-child(5) {
   animation-delay: 1.5s;
 }
-ul li:nth-child(6){
+ul li:nth-child(6) {
   animation-delay: 1.8s;
 }
-ul li:nth-child(7){
+ul li:nth-child(7) {
   animation-delay: 2.1s;
 }
-ul li:nth-child(8){
+ul li:nth-child(8) {
   animation-delay: 2.4s;
 }
-ul li:nth-child(9){
+ul li:nth-child(9) {
   animation-delay: 2.7s;
 }
-ul li:nth-child(10){
+ul li:nth-child(10) {
   animation-delay: 3s;
 }
-ul li:nth-child(11){
+ul li:nth-child(11) {
   animation-delay: 3.3s;
 }
-ul li:nth-child(12){
+ul li:nth-child(12) {
   animation-delay: 3.6s;
 }
 
 /* ==================================================================== */
 /* fancy submit button */
 
-a{
-	position: absolute;
-	top: 90%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 200px;
-	height: 60px;
-	line-height: 60px;
-	text-align: center;
-	font-family: sans-serif;
-	text-transform: uppercase;
-	font-size: 24px;
-	letter-spacing: 4px;
-	color: #fff;
-	text-decoration: none;
+a {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 4px;
+  color: #fff;
+  text-decoration: none;
 }
 a svg,
-a svg rect{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	fill: transparent;
+a svg rect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  fill: transparent;
 }
-a svg rect{
-	stroke: rgb(207, 127, 163);
-	stroke-width: 4;
-	transition: 2s;
-	stroke-dasharray: 60 200;
-	stroke-dashoffset: 320;
+a svg rect {
+  stroke: rgb(207, 127, 163);
+  stroke-width: 4;
+  transition: 2s;
+  stroke-dasharray: 60 200;
+  stroke-dashoffset: 320;
 }
-a:hover svg rect{
-	stroke: #fff900;
-	stroke-dasharray: 200 60;
-	stroke-dashoffset: 0;
+a:hover svg rect {
+  stroke: #fff900;
+  stroke-dasharray: 200 60;
+  stroke-dashoffset: 0;
 }
 
 /* ==================================================================== */
@@ -826,16 +826,16 @@ a:hover svg rect{
   text-align: center;
 }
 
-.lead{
+.lead {
   text-align: center;
 }
-#search-box, #search-box-2 {
+#search-box,
+#search-box-2 {
   max-width: 150px;
   max-height: 40px;
   padding: 10px;
-    margin: 20px auto 0 auto;
-    background-color: #7c7777eb;
-    border-radius: 8px;
-    box-shadow: 0 10px 20px #fff900, 0 0 0 10px #ffffffeb;
+  margin: 20px auto 0 auto;
+  background-color: #7c7777eb;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px #fff900, 0 0 0 10px #ffffffeb;
 }
-
