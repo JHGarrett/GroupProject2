@@ -4,7 +4,7 @@
     <input placeholder="Password" type="password" name="password">
     <button>login</button>
     </form>
-</div> --}}
+</div>
 <div>
     <form id="sampleLogin">
         <input placeholder="Email" class="email">
@@ -12,18 +12,18 @@
         <button>Login</button>
     </form>
 </div>
-
+ 
 <script>
-    $("#sampleLogin").on("submit", function(event) {
+    $("#johnap").on("submit", function (event) {
         console.log("asdfadsf")
         event.preventDefault();
         var userData = {
             email: $(".email").val().trim(),
             password: $(".password").val().trim()
         };
-        $.post("/api/login", userData).then(function(data) {
+        $.post("/api/login", userData).then(function (data) {
             window.location.replace(data);
         })
     });
 
-</script> 
+</script>  --}}

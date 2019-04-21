@@ -1,4 +1,4 @@
-<div>
+{{!-- <div>
     <form id="sampleSignup">
         <input placeholder="Email" class="email">
         <input placeholder="Password" type="password" class="password">
@@ -7,16 +7,16 @@
 </div>
 
 <script>
-    $("#sampleSignup").on("submit", function(event) {
+    $("#sampleSignup").on("submit", function (event) {
         console.log("asdfadsf")
         event.preventDefault();
         var userData = {
             email: $(".email").val().trim(),
             password: $(".password").val().trim()
         };
-        $.post("/api/signup", userData).then(function(data) {
+        $.post("/api/signup", userData).then(function (data) {
             window.location.replace(data);
         })
     });
 
-</script> 
+</script>  --}}
