@@ -11,6 +11,11 @@ module.exports = function(app) {
     });
   });
 
+  app.get("/logout", function(req, res) {
+    req.logout();
+    res.redirect("/");
+  });
+
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
     db.Example.findOne({ where: { id: req.params.id } }).then(function(
@@ -49,6 +54,7 @@ module.exports = function(app) {
   //login
   app.get("/login", function(req, res) {
     res.render("login ", {});
+    // Route for logging out
 
     // Render 404 page for any unmatched routes
     app.get("*", function(req, res) {

@@ -5,16 +5,16 @@ $(document).ready(function() {
   // var $submitBtn = $("#submit");
   // var $exampleList = $("#example-list");
 
-  var options = {
-    animate: true,
-    patternWidth: 95.03,
-    patternHeight: 83.69,
-    grainOpacity: 0.02,
-    grainDensity: 1,
-    grainWidth: 2.56,
-    grainHeight: 1
-  };
-  grained("#searchJumbotron", options);
+  // var options = {
+  //   animate: true,
+  //   patternWidth: 95.03,
+  //   patternHeight: 83.69,
+  //   grainOpacity: 0.02,
+  //   grainDensity: 1,
+  //   grainWidth: 2.56,
+  //   grainHeight: 1
+  // };
+  // grained("#searchJumbotron", options);
 
   // login info page
   // var $loginForm = $("#login-btn");

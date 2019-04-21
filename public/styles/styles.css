@@ -235,7 +235,7 @@ nav {
 }
 
 nav h1 {
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: white;
   font-size: 30px;
   padding: 10px 0;
@@ -269,9 +269,9 @@ nav h1 {
 /* movie recoomendation div */
 #searchJumbotron {
   font-family: "Open Sans", sans-serif;
-  min-height: 50%;
+  min-height: 100%;
   margin: 80px 65px;
-  border-radius: 25px;
+  /* border-radius: 25px; */
 }
 #instructions {
   margin-top: 50px;
@@ -782,7 +782,7 @@ ul li:nth-child(12) {
 /* fancy submit button */
 
 a {
-  position: absolute;
+  /* position: absolute; */
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);

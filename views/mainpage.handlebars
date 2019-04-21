@@ -27,19 +27,12 @@
 
 {{!-- navbar --}}
 <nav>
-    <h1 id=>Logo </h1>
+    <h1 id=><span id="nameHeader">Welcome {{name}}</span></h1>
 
     <div class="navSearchItems">
-        <div class="dropdown">
-
-            <a id="nav-item" href="#"><span id="nameHeader">Welcome {{name}}</span></a>
-
-            <div class="dropdown-content">
-                <a id="nav-item" href="#">Search</a>
-                <a id="nav-item" href="#">Favorites</a>
-                <a id="nav-item" href="#">Logout</a>
-            </div>
-        </div>
+        <a id="nav-item" href="#">Search</a>
+        <a id="nav-item" href="#">Favorites</a>
+        <a id="nav-item" href="/logout">Logout</a>
     </div>
     </div>
 </nav>

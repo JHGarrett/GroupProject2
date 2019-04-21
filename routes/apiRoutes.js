@@ -2,12 +2,6 @@ var db = require("../models");
 var passport = require("../config/passport");
 
 module.exports = function(app) {
-  //   // Route for logging out
-  //   app.get("/logout", function(req, res) {
-  //     req.logout();
-  //     res.redirect("/");
-  //   });
-
   //   // Route for data on user for server side
   //   app.get("/api/user_data", function(req, res) {
   //     if (!req.user) {
