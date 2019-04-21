@@ -269,7 +269,7 @@ nav h1 {
 /* movie recoomendation div */
 #searchJumbotron {
   font-family: "Open Sans", sans-serif;
-  min-height: 100%;
+  min-height: 70%;
   margin: 80px 65px;
   /* border-radius: 25px; */
 }
@@ -781,9 +781,9 @@ ul li:nth-child(12) {
 /* ==================================================================== */
 /* fancy submit button */
 
-a {
-  /* position: absolute; */
-  top: 90%;
+b {
+  position: absolute;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 200px;
@@ -797,8 +797,8 @@ a {
   color: #fff;
   text-decoration: none;
 }
-a svg,
-a svg rect {
+b svg,
+b svg rect {
   position: absolute;
   top: 0;
   left: 0;
@@ -806,14 +806,14 @@ a svg rect {
   height: 100%;
   fill: transparent;
 }
-a svg rect {
+b svg rect {
   stroke: rgb(207, 127, 163);
   stroke-width: 4;
   transition: 2s;
   stroke-dasharray: 60 200;
   stroke-dashoffset: 320;
 }
-a:hover svg rect {
+b:hover svg rect {
   stroke: #fff900;
   stroke-dasharray: 200 60;
   stroke-dashoffset: 0;
