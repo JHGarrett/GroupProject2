@@ -1,20 +1,4 @@
 $(document).ready(function() {
-  // // Get references to page elements
-  // var $exampleText = $("#example-text");
-  // var $exampleDescription = $("#example-description");
-  // var $submitBtn = $("#submit");
-  // var $exampleList = $("#example-list");
-
-  // var options = {
-  //   animate: true,
-  //   patternWidth: 95.03,
-  //   patternHeight: 83.69,
-  //   grainOpacity: 0.02,
-  //   grainDensity: 1,
-  //   grainWidth: 2.56,
-  //   grainHeight: 1
-  // };
-  // grained("#searchJumbotron", options);
 
   // login info page
   // var $loginForm = $("#login-btn");
@@ -22,17 +6,7 @@ $(document).ready(function() {
   var $loginSubmit = $("#login-submit");
   var $signupSubmit = $("#signup-submit");
 
-  // A form that allows existing users to log in
-  // $loginForm.on("click", function() {
-  //   $("#signup-form").hide();
-  //   $("#login-form").show();
-  // });
 
-  // A form that allow new users to sign up for the app
-  // $signupForm.on("click", function() {
-  //   $("#login-form").hide();
-  //   $("#signup-form").show();
-  // });
 
   // allow user to go to the users page
 
@@ -69,18 +43,7 @@ $(document).ready(function() {
   $signupSubmit.on("click", function(event) {
     event.preventDefault();
 
-    // user must enter password twice to make sure there is no typo
-
-    // var pass1 = $("#userPasswordSignup")
-    //   .val()
-    //   .trim();
-    // var pass2 = $("#confirmPassword")
-    //   .val()
-    //   .trim();
-
-    // if (pass1 !== pass2) {
-    //   $("#passwordMatch").text("Your passwords don't match!");
-    // } else {
+ 
     var signup = {
       name: $("#nameSignup")
         .val()
