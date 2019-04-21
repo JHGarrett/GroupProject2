@@ -11,6 +11,11 @@ module.exports = function(app) {
     });
   });
 
+  app.get("/logout", function(req, res) {
+    req.logout();
+    res.redirect("/");
+  });
+
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
     db.Example.findOne({ where: { id: req.params.id } }).then(function(
@@ -38,21 +43,22 @@ module.exports = function(app) {
     });
   });
 
-  app.get("/profile", function(req, res) {
-    res.render("profile", {});
-  });
+  // app.get("/profile", function(req, res) {
+  //   res.render("profile", {});
+  // });
 
-  //sign up
-  app.get("/signup", function(req, res) {
-    res.render("signup", {});
-  });
-  //login
-  app.get("/login", function(req, res) {
-    res.render("login ", {});
+  // //sign up
+  // app.get("/signup", function(req, res) {
+  //   res.render("signup", {});
+  // });
+  // //login
+  // app.get("/login", function(req, res) {
+  //   res.render("login ", {});
+  // Route for logging out
 
-    // Render 404 page for any unmatched routes
-    app.get("*", function(req, res) {
-      res.render("404");
-    });
+  // Render 404 page for any unmatched routes
+  app.get("*", function(req, res) {
+    res.render("404");
   });
+  // });
 };
