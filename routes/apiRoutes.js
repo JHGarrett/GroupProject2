@@ -2,8 +2,6 @@ var db = require("../models");
 var passport = require("../config/passport");
 
 module.exports = function(app) {
-
-
   app.post("/api/signup", function(req, res) {
     db.User.create(req.body)
       .then(function() {

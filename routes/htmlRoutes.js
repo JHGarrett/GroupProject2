@@ -43,22 +43,22 @@ module.exports = function(app) {
     });
   });
 
-  app.get("/profile", function(req, res) {
-    res.render("profile", {});
-  });
+  // app.get("/profile", function(req, res) {
+  //   res.render("profile", {});
+  // });
 
-  //sign up
-  app.get("/signup", function(req, res) {
-    res.render("signup", {});
-  });
-  //login
-  app.get("/login", function(req, res) {
-    res.render("login ", {});
-    // Route for logging out
+  // //sign up
+  // app.get("/signup", function(req, res) {
+  //   res.render("signup", {});
+  // });
+  // //login
+  // app.get("/login", function(req, res) {
+  //   res.render("login ", {});
+  // Route for logging out
 
-    // Render 404 page for any unmatched routes
-    app.get("*", function(req, res) {
-      res.render("404");
-    });
+  // Render 404 page for any unmatched routes
+  app.get("*", function(req, res) {
+    res.render("404");
   });
+  // });
 };

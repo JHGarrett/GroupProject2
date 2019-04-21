@@ -1,12 +1,9 @@
 $(document).ready(function() {
-
   // login info page
   // var $loginForm = $("#login-btn");
   // var $signupForm = $("#signup-btn");
   var $loginSubmit = $("#login-submit");
   var $signupSubmit = $("#signup-submit");
-
-
 
   // allow user to go to the users page
 
@@ -43,7 +40,6 @@ $(document).ready(function() {
   $signupSubmit.on("click", function(event) {
     event.preventDefault();
 
- 
     var signup = {
       name: $("#nameSignup")
         .val()
