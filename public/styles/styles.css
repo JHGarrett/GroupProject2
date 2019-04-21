@@ -235,7 +235,7 @@ nav {
 }
 
 nav h1 {
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: white;
   font-size: 30px;
   padding: 10px 0;
@@ -269,9 +269,9 @@ nav h1 {
 /* movie recoomendation div */
 #searchJumbotron {
   font-family: "Open Sans", sans-serif;
-  min-height: 50%;
+  min-height: 70%;
   margin: 80px 65px;
-  border-radius: 25px;
+  /* border-radius: 25px; */
 }
 #instructions {
   margin-top: 50px;
@@ -781,9 +781,9 @@ ul li:nth-child(12) {
 /* ==================================================================== */
 /* fancy submit button */
 
-a {
+b {
   position: absolute;
-  top: 90%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 200px;
@@ -797,8 +797,8 @@ a {
   color: #fff;
   text-decoration: none;
 }
-a svg,
-a svg rect {
+b svg,
+b svg rect {
   position: absolute;
   top: 0;
   left: 0;
@@ -806,14 +806,14 @@ a svg rect {
   height: 100%;
   fill: transparent;
 }
-a svg rect {
+b svg rect {
   stroke: rgb(207, 127, 163);
   stroke-width: 4;
   transition: 2s;
   stroke-dasharray: 60 200;
   stroke-dashoffset: 320;
 }
-a:hover svg rect {
+b:hover svg rect {
   stroke: #fff900;
   stroke-dasharray: 200 60;
   stroke-dashoffset: 0;
@@ -838,4 +838,59 @@ a:hover svg rect {
   background-color: #7c7777eb;
   border-radius: 8px;
   box-shadow: 0 10px 20px #fff900, 0 0 0 10px #ffffffeb;
+}
+
+
+/* ===================================================================== */
+/* 404 page */
+
+.eyes{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:100%;
+  text-align:center
+}
+.eye{
+  width:180px;
+  height:120px;
+  background:#fff;
+  display:inline-block;
+  margin:40px;
+  border-radius:50%;
+  position:relative;
+  border:5px solid #fff;
+}
+  .eye:before {
+      content: "";
+      -webkit-clip-path: polygon(8% 58%, 16% 50%, 25% 45%, 37% 43%, 45% 43%, 59% 44%, 68% 48%, 72% 54%, 75% 58%, 62% 55%, 52% 52%, 43% 51%, 32% 52%, 22% 53%);
+      background: #fff;
+      position: absolute;
+      top: -100px;
+      left:-15px;
+      width: 250px;
+      height:150px;
+      z-index: 2;
+  }
+
+.ball{
+  width:40px;
+  height:40px;
+  background:#000;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  border-radius:50%;
+  border:15px solid blue;
+}
+.ball:before{
+  content:"";
+  position:absolute;
+  top:5px;
+  height:20px;
+  width:10px;
+  height:10px;
+  background:#fff;
+  border-radius:50%;
 }
