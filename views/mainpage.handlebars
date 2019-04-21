@@ -118,8 +118,9 @@
 
             </div>
             <div class="row">
-                 <a id="submit" value="Get Recomendations" href="#">
+                 <a id="submit" value="Get Recomendations" href="#" onclick="clearFields()">
 		<svg><rect></rect></svg>SUBMIT</a>
+        
 
             <div class="col-md-3">
             </div>
@@ -210,3 +211,9 @@
 {{!--     -Hunter      --}}
 
 {{!-- <script src="/public/js/sidLogic.js"></script> --}}
+<script type="text/javascript">
+function clearFields() {
+    document.getElementById("search-box").value=""
+    document.getElementById("search-box-2").value=""
+}
+</script>
