@@ -725,7 +725,7 @@ ul li:nth-child(12) {
 
 b {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 200px;
