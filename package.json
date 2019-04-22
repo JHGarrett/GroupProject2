@@ -24,7 +24,8 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "prettier": "^1.17.0",
-    "sequelize": "^4.43.2"
+    "sequelize": "^4.43.2",
+    "three": "^0.103.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",

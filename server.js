@@ -4,6 +4,12 @@ var exphbs = require("express-handlebars");
 var session = require("express-session");
 var db = require("./models");
 var app = express();
+// we need to use three.js for the animation on the error page
+var THREE = require("three");
+
+
+// npm test will tell you this isnt used. 
+// var scene = new THREE.Scene();
 
 // we can change this port later if needed. Most express stuff uses this port however by default
 var PORT = process.env.PORT || 3000;

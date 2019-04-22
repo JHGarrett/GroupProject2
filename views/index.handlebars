@@ -1,7 +1,7 @@
 <link
   href='https://fonts.googleapis.com/css?family=Roboto:900,900italic,500,400italic,100,700italic,300,700,500italic,100italic,300italic,400'
   rel='stylesheet' type='text/css'>
-
+{{!-- login/sign up page --}}
 <div id="fback">
   <div class="johnback"></div>
   <div class="garrettback"></div>
@@ -9,12 +9,12 @@
 
 <div id="textbox">
   <div class="toplam">
-
+    {{!-- when clicking the sign upu button the image will shift to the left --}}
     <div class="left">
       <div id="ic">
         <h2>Sign Up</h2>
-        <p>Welcome new friend. You are about to sign up for the greatest site in existance... at least that's what my
-          Mom says.</p>
+        <p>Welcome new friend. You are about to sign up for the greatest site in existance... at least that's what our
+          Mother's tell us.</p>
         {{!-- <form id="johnap" name="signup_form" id="signup_form" action="/api/signup" method="post" enctype="multipart/form-data" onsubmit="return false;"> --}}
         <form id="signup-form">
           <div class="john form-group">
@@ -36,7 +36,7 @@
 
           <input type="submit" name="signup-submit" id="signup-submit" value="Sign Up" class="johnbtn" />
         </form>
-
+        {{!-- allows users to sign in. if on the sign up page clicking login will shift the image to allow for log in --}}
         <button id="moveright">Login</button>
       </div>
     </div>
@@ -64,7 +64,7 @@
 
   </div>
 </div>
-
+{{!-- js to allow divs to move on click --}}
 <script>
   $('.form-control').on('focus blur', function (e) {
     $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));

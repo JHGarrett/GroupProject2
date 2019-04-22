@@ -11,7 +11,7 @@
 </nav>
 
 {{!-- mainpage - recommendation serach bar --}}
-
+{{!-- this is the display that glows --}}
 <div class="jumbotron jumbotron-fluid" id="searchJumbotron">
     <div class="container">
         <ul>
@@ -43,6 +43,7 @@
                 <div class="col-md-3">
                     {{!-- empty --}}
                 </div>
+                {{!-- search boxes --}}
                 <div class="col-md-4">
                     <img src="/images/Webp.net-compress-image.jpg" alt="MOVIE POSTER 1" class="searchMovieImg">
                 </div>
@@ -83,6 +84,7 @@
                 </div>
 
             </div>
+            {{!-- fancy submit button that i made --}}
             <div class="row">
                 <b id="submit" value="Get Recomendations" href="#" onclick="clearFields()">
                     <svg>
@@ -104,7 +106,7 @@
 </div>
 </div>
 
-
+{{!-- the results container --}}
 <div style="background-color:black" class="jumbotron jumbotron-fluid">
     <h2 class="subTitle">You should check out:</h2>
     <div class="results-box">

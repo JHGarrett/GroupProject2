@@ -1,3 +1,4 @@
+// bcrypt hides the sensative user data in our database. It will also block out the character input when typing in your password
 const bcrypt = require("bcrypt-nodejs");
 
 module.exports = function(sequelize, DataTypes) {
