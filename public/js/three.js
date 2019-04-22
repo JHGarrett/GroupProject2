@@ -191,6 +191,10 @@ $(document).ready(function() {
           uTime: { type: "f", value: 0 },
           uDuration: { type: "f", value: mDuration }
         },
+        /*jshint -W069 */
+        /*Disable Warning Justification:
+    Using bracket notation so Google Closure Compiler 
+    ADVANCED_OPTIMIZATIONS will keep the original property names. */
         shaderFunctions: [
           THREE.BAS.ShaderChunk["quaternion_rotation"],
           THREE.BAS.ShaderChunk["cubic_bezier"]
@@ -673,3 +677,4 @@ $(document).ready(function() {
     ].join("\n");
   };
 });
+/*jshint +W069 */
