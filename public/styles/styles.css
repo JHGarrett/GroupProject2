@@ -212,8 +212,8 @@ nav h1 {
 #searchJumbotron {
   font-family: "Open Sans", sans-serif;
   min-height: 70%;
-  margin: 80px 65px;
-  /* border-radius: 25px; */
+  margin: 30px 65px;
+  text-align: center; /* border-radius: 25px; */
 }
 #instructions {
   margin-top: 50px;
@@ -394,7 +394,7 @@ h2 {
 .right {
   width: 50%;
   height: 100%;
-  background: rgb(100, 98, 98);
+  background: rgb(29, 30, 35);
   right: 0;
   position: absolute;
 }
@@ -738,6 +738,7 @@ b {
   letter-spacing: 4px;
   color: #fff;
   text-decoration: none;
+  margin: 15 px 0;
 }
 b svg,
 b svg rect {
@@ -773,13 +774,16 @@ b:hover svg rect {
 }
 #search-box,
 #search-box-2 {
-  max-width: 153px;
+  color: rgb(231, 184, 81);
+  max-width: 150px;
   max-height: 40px;
   padding: 10px;
   margin: 20px auto 0 auto;
-  background-color: #7c7777eb;
+  background-color: rgb(21, 21, 23);
   border-radius: 8px;
-  box-shadow: 0 10px 20px #fff900, 0 0 0 10px #ffffffeb;
+  border: rgb(231, 184, 81) solid 2px;
+
+  /* box-shadow: 0 10px 20px #fff900, 0 0 0 10px #ffffffeb; */
 }
 
 /* ===================================================================== */
@@ -838,3 +842,45 @@ b:hover svg rect {
 } */
 
 /* this was my original animaition of the eyes following you on the page please dont delete. I have not added to my codepen yet */
+/* ============================================================================================================================================ */
+/* hunters fucked up css */
+
+.centered {
+  text-align: center;
+}
+@media only screen and (min-width: 1000px) {
+  .content-box img {
+    min-width: 20%;
+  }
+
+  .content-box img:hover {
+    min-width: 24%;
+  }
+}
+
+#logo {
+  width: 75%;
+}
+.nav-content {
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 100%;
+}
+.submission {
+  margin: 15px 0 50px 0;
+}
+
+.submission:hover {
+  cursor: pointer;
+}
+#search-box::placeholder,
+#search-box-2::placeholder {
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .searchMovieImg {
+    display: none;
+  }
+}
