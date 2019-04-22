@@ -106,37 +106,6 @@ float:right;
   color: rgb(231, 184, 81);
 }
 
-/* .profile-column {
-  background: rgb(17, 17, 25);
-  width: 30%;
-  float: left;
-  height: 100%;
-  border-right: rgb(31, 29, 42) solid 2px;
-  line-height: 1em;
-} */
-
-/* .results-box {
-  text-align: right;
-  float: right;
-  background: rgb(14, 14, 20);
-  width: 70%;
-  height: 100%;
-} */
-
-/* .profile-content {
-  float: left;
-  padding: 15px;
-  padding-left: 10%;
-}
-
-.profile-content header {
-  display: inline-block;
-}
-
-#profile-pic {
-  float: left;
-} */
-
 .user-info-box {
   border: rgb(31, 29, 42) solid 2px;
   border-radius: 4px;
@@ -177,36 +146,9 @@ float:right;
   margin: 15px auto;
 }
 
-/* #search-box {
-  border: rgb(31, 29, 42) solid 1px;
-  border-radius: 4px;
-  padding: 5px;
-  padding-left: 10px;
-  width: 50%;
-  background: rgb(4, 3, 7);
-  color: rgb(209, 116, 144);
-  margin-bottom:15px;
-  clear:both;
-} */
-
 .searchbar::placeholder {
   color: rgb(69, 60, 83);
 }
-
-/* #submit {
-  width: 120px;
-  border: rgb(105, 92, 122) solid 2px;
-  border-radius: 4px;
-  background: rgb(69, 60, 83);
-  transition: color 0.25s, background 0.25s;
-}
-
-#submit:hover {
-  cursor: pointer;
-  background: rgb(31, 29, 42);
-  color: rgb(224, 196, 209);
-  border-color: rgb(51, 40, 96);
-} */
 
 @media only screen and (min-width: 700px) {
   .content-box img:hover {
@@ -808,7 +750,7 @@ ul li:nth-child(12) {
 
 b {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 200px;
@@ -873,11 +815,11 @@ b:hover svg rect {
   color:white;
 }
 
-
 /* ===================================================================== */
 /* 404 page */
 
-.eyes{
+/* this was my original animaition of the eyes following you on the page please dont delete. I have not added to my codepen yet */
+/* .eyes{
   position:absolute;
   top:50%;
   transform:translateY(-50%);
@@ -926,30 +868,6 @@ b:hover svg rect {
   height:10px;
   background:#fff;
   border-radius:50%;
-}
+} */
 
-#submit:hover{
-  cursor:pointer;
-}
-
-.lead{
-  margin: 25px auto;
-}
-
-.container{
-  text-align:center;
-}
-@media screen and (max-width:800px){
- 
-  #search-form{
-    margin-top:0px;
-  }
-
-  .submission{
-    margin-bottom:50px;
-  }
-  
-  .searchMovieImg{
-    display:none;
-  }
-}
+/* this was my original animaition of the eyes following you on the page please dont delete. I have not added to my codepen yet */

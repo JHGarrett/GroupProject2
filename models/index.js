@@ -1,3 +1,4 @@
+// this is the main js file that tells sequalize what to use on what page
 "use strict";
 
 var fs = require("fs");
@@ -7,6 +8,9 @@ var basename = path.basename(module.filename);
 var env = process.env.NODE_ENV || "development";
 var config = require(__dirname + "/../config/config.json")[env];
 var db = {};
+var THREE = require("three");
+
+var scene = new THREE.Scene();
 
 if (config.use_env_variable) {
   var sequelize = new Sequelize(process.env[config.use_env_variable]);

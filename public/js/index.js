@@ -1,7 +1,5 @@
 $(document).ready(function() {
   // login info page
-  // var $loginForm = $("#login-btn");
-  // var $signupForm = $("#signup-btn");
   var $loginSubmit = $("#login-submit");
   var $signupSubmit = $("#signup-submit");
 
