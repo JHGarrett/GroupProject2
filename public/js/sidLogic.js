@@ -1,3 +1,4 @@
+// this page contains the api calls that are needed to get the results
 $(document).ready(function() {
   // capture both values on clicking submit button
   $("#submit").click(function() {

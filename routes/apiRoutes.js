@@ -1,3 +1,4 @@
+// api routes for passport js
 var db = require("../models");
 var passport = require("../config/passport");
 
