@@ -22,7 +22,7 @@ module.exports = function(app) {
 
   // Favorites Code
 
-  app.post("/api/favorites", function(req) {
+  app.post("/Favorites", function(req) {
     db.Favorites.create({
       UserId: req.user.id
     }).then(function() {

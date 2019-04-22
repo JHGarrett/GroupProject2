@@ -47,5 +47,9 @@ module.exports = function(app) {
   app.get("*", function(req, res) {
     res.render("404");
   });
+
+  app.get("/Favorites", function(req, res) {
+    res.render("Favorites");
+  });
   // });
 };

@@ -69,17 +69,17 @@ $(document).ready(function() {
 
   // Favorites Code
 
-  // $(".content").on("click", "img", function() {
-  //   //Logs the name of the movie clicked.
-  //   console.log($(this).attr("id") + " was clicked.");
-  //   var newFavorite = {
-  //     title: $(this).attr("id")
-  //   };
-  //   $.ajax("/api/favorites", {
-  //     method: "POST",
-  //     data: newFavorite
-  //   }).then(function(req, res) {
-  //     console.log(req + res);
-  //   });
-  // });
+  $(".content").on("click", "img", function() {
+    //Logs the name of the movie clicked.
+    console.log($(this).attr("id") + " was clicked.");
+    var newFavorite = {
+      title: $(this).attr("id")
+    };
+    $.ajax("/Favorites", {
+      method: "POST",
+      data: newFavorite
+    }).then(function(req, res) {
+      console.log(req + res);
+    });
+  });
 });
