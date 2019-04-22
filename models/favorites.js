@@ -2,8 +2,8 @@ var User = require("./user.js");
 
 module.exports = function(sequelize, DataTypes) {
   var Favorites = sequelize.define("Favorites", {
-    type: DataTypes.STRING,
-    title: DataTypes.STRING
+    title: DataTypes.STRING,
+    UserId: DataTypes.INTEGER(100)
   });
 
   Favorites.associate = function(models) {
@@ -12,4 +12,4 @@ module.exports = function(sequelize, DataTypes) {
   return Favorites;
 };
 
-console.log(User);
+console.log(User.id);
