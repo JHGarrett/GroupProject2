@@ -87,6 +87,10 @@ float:right;
   margin: 0 auto;
 }
 
+.centered{
+  text-align:center;
+}
+
 .mainpage {
   font-family: Arial, Helvetica, sans-serif;
   height: 100%;
@@ -221,6 +225,20 @@ float:right;
   }
 }
 
+@media only screen and (min-width:1000px){
+  .content-box img{
+    min-width:20%;
+  }
+
+  .content-box img:hover{
+    min-width:24%;
+  }
+}
+
+#logo{
+  width:75%;
+}
+
 /* barbara styling */
 /* navigation */
 nav {
@@ -232,6 +250,13 @@ nav {
   width: 100%;
   top: 0;
   background: rgb(17, 17, 17);
+}
+
+.nav-content{
+  text-align:center;
+  margin-left:10%;
+  margin-right:10%;
+  width:100%;
 }
 
 nav h1 {
@@ -270,7 +295,7 @@ nav h1 {
 #searchJumbotron {
   font-family: "Open Sans", sans-serif;
   min-height: 70%;
-  margin: 80px 65px;
+  margin: 60px 65px;
   /* border-radius: 25px; */
 }
 #instructions {
@@ -452,7 +477,7 @@ h2 {
 .right {
   width: 50%;
   height: 100%;
-  background: rgb(100, 98, 98);
+  background: rgb(29, 30, 35);
   right: 0;
   position: absolute;
 }
@@ -488,7 +513,7 @@ form#signup-form input {
   outline: 0;
   border-left: 0;
   border-right: 0;
-  padding: 8px 0;
+  padding: 16px 0;
   margin-top: 20px !important;
   background: none;
   border-top: 0;
@@ -678,7 +703,7 @@ form#login-form input {
   outline: 0;
   border-left: 0;
   border-right: 0;
-  padding: 8px 0;
+  padding: 16px 0;
   margin-top: 20px !important;
   background: none;
   border-top: 0;
@@ -708,11 +733,11 @@ form#login-form input {
 .left form#login-form input {
   border-bottom: 1px solid #45494c;
 }
-
 /* ==================================================================== */
 /* letter animation */
 ul {
   position: absolute;
+  top:125px;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
@@ -796,6 +821,8 @@ b {
   letter-spacing: 4px;
   color: #fff;
   text-decoration: none;
+
+  margin:15px 0;
 }
 b svg,
 b svg rect {
@@ -831,13 +858,19 @@ b:hover svg rect {
 }
 #search-box,
 #search-box-2 {
+  color:rgb(231, 184, 81);
   max-width: 150px;
   max-height: 40px;
   padding: 10px;
   margin: 20px auto 0 auto;
-  background-color: #7c7777eb;
+  background-color: rgb(21, 21, 23);
   border-radius: 8px;
-  box-shadow: 0 10px 20px #fff900, 0 0 0 10px #ffffffeb;
+  border:rgb(231, 184, 81) solid 2px;
+  /* box-shadow: 0 10px 20px #fff900, 0 0 0 10px #ffffffeb; */
+}
+
+#search-box::placeholder, #search-box-2::placeholder{
+  color:white;
 }
 
 
@@ -893,4 +926,30 @@ b:hover svg rect {
   height:10px;
   background:#fff;
   border-radius:50%;
+}
+
+#submit:hover{
+  cursor:pointer;
+}
+
+.lead{
+  margin: 25px auto;
+}
+
+.container{
+  text-align:center;
+}
+@media screen and (max-width:800px){
+ 
+  #search-form{
+    margin-top:0px;
+  }
+
+  .submission{
+    margin-bottom:50px;
+  }
+  
+  .searchMovieImg{
+    display:none;
+  }
 }

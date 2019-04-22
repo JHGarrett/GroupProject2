@@ -19,12 +19,13 @@ module.exports = function(app) {
     res.json("/mainpage");
   });
 
+  // Favorites Code
+
   app.post("/api/favorites", function(req) {
     db.Favorites.create({
       UserId: req.user.id
     }).then(function() {
       console.log("Favorite Created");
-      console.log(req.user.id);
     });
   });
 };

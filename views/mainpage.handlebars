@@ -1,35 +1,41 @@
 {{!-- navbar --}}
 <nav>
-    <h1 id=><span id="nameHeader">Welcome {{name}}</span></h1>
+    <div class="nav-content">
+        <h1 id=><span id="nameHeader">Welcome, {{name}}</span></h1>
 
-    <div class="navSearchItems">
-        <a id="nav-item" href="#">Search</a>
-        <a id="nav-item" href="#">Favorites</a>
-        <a id="nav-item" href="/logout">Logout</a>
+        <div class="navSearchItems">
+            <a id="nav-item" href="#">Search</a>
+            {{!-- <a id="nav-item" href="#">Favorites</a> --}}
+            <a id="nav-item" href="/logout">Logout</a>
+        </div>
+        </div>
+
     </div>
-    </div>
+   
 </nav>
 
 {{!-- mainpage - recommendation serach bar --}}
 
 <div class="jumbotron jumbotron-fluid" id="searchJumbotron">
     <div class="container">
-        <ul>
-            <li>P</li>
-            <li>O</li>
-            <li>P</li>
-            <li>C</li>
-            <li>O</li>
-            <li>R</li>
-            <li style="margin-right:36px">N</li>
-            <li>N</li>
-            <li>I</li>
-            <li>G</li>
-            <li>H</li>
-            <li>T</li>
-
-
-        </ul>
+        {{!-- <div class="row centered">
+            <ul>
+                <li>P</li>
+                <li>O</li>
+                <li>P</li>
+                <li>C</li>
+                <li>O</li>
+                <li>R</li>
+                <li style="margin-right:36px">N</li>
+                <li>N</li>
+                <li>I</li>
+                <li>G</li>
+                <li>H</li>
+                <li>T</li>
+            </ul>
+        </div> --}}
+           <img id = "logo" src="images/Popcorn-Night-Logo.png" alt="">
+            <p class="lead">Pick two movies and we will give you recommendations based on your choices</p>
 
 
         <div class="display-12">
@@ -37,61 +43,34 @@
         </div>
         <form id="search-form">
 
-            <div class="row">
-
-
-                <div class="col-md-3">
-                    {{!-- empty --}}
-                </div>
+            <div class="row centered">
                 <div class="col-md-4">
                     <img src="/images/Webp.net-compress-image.jpg" alt="MOVIE POSTER 1" class="searchMovieImg">
+                </div>
+                <div class="col-md-4 submission">
+                    <b id="submit" value="Get Recomendations" href="#" onclick="clearFields()">
+                        <svg>
+                            <rect></rect>
+                        </svg>SUBMIT
+                    </b>
                 </div>
                 <div class="col-md-4">
                     <img src="/images/hermes_rivera_469608_xqJqZ.jpg" alt="MOVIE POSTER 2" class="searchMovieImg">
                 </div>
-                <div class="col-md-3">
-                    {{!-- empty --}}
-                </div>
             </div>
-            <p class="lead">Pick two movies and we will give you recommendations based on your choices</p>
+            
 
-            <div class="row">
-
-                <div class="col-md-3">
-                </div>
+            <div class="row centered">
                 <div class="col-md-4">
                     <input type="text" class="search" id="search-box" placeholder="Movie 1...">
                 </div>
+                <div class="col-md-4"></div>
                 <div class="col-md-4">
                     <input type="text" class="search" id="search-box-2" placeholder="Movie 2...">
                 </div>
-                <div class="col-md-3">
-                </div>
-
             </div>
 
-            <div class="row">
-                <div class="col-md-6">
-                    {{!-- empty --}}
-                </div>
-
-                {{!-- <div class="col-md-3">
-             <input style="margin-right: 50px" type="button" id="submit" value="Get Recomendations">
-            </div> --}}
-                <div class="col-md-4">
-                    {{!-- empty --}}
-                </div>
-
             </div>
-            <div class="row">
-                <b id="submit" value="Get Recomendations" href="#" onclick="clearFields()">
-                    <svg>
-                        <rect></rect>
-                    </svg>SUBMIT</b>
-
-
-                <div class="col-md-3">
-                </div>
         </form>
     </div>
 </div>
