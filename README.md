@@ -10,7 +10,7 @@
 ## About
 Popcorn Night is a Full Stack project that allows users to search for movie recommendations based on two movies.  
 
-<img src="/images/img2">
+<img src="/images/img2.png">
 
 
 ## Demo
@@ -19,7 +19,7 @@ If you would like to try out features as a "user" without creating an account, e
 username: `popcorn@popcorn.com`  
 password: `pop1234` 
 
-<img src="/images/img1">
+<img src="/images/img1.png">
 
 
 ## Requirements
